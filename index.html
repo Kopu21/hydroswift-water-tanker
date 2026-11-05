@@ -1,0 +1,3049 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HydroSwift | Premium Water Tanker Supply & Logistics</title>
+  <meta name="description" content="On-demand potable, commercial, and industrial water tanker supply service with live delivery tracking and instant booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header" id="navbar">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home1" class="brand-logo" onclick="navigateTo('home1')">
+        <div class="logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="40" height="40" rx="10" fill="url(#logo-grad)"/>
+            <path d="M20 9C20 9 12 19.5 12 24.5C12 28.9183 15.5817 32.5 20 32.5C24.4183 32.5 28 28.9183 28 24.5C28 19.5 20 9 20 9Z" fill="#FFFFFF"/>
+            <path d="M16 23.5C16 21 18 17.5 19 16C18.5 19 19.5 21.5 21 23C22.5 24.5 23.5 26.5 22 28.5C20.5 30.5 17 29.5 16 27C15.5 25.75 16 24.5 16 23.5Z" fill="#38BDF8"/>
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#0284C7"/>
+                <stop offset="1" stop-color="#0369A1"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">Hydro<span class="text-accent">Swift</span></span>
+          <span class="logo-subtitle">Water Tanker Logistics</span>
+        </div>
+      </a>
+
+      <!-- Primary Navigation Links (Exactly Five Links) -->
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item has-dropdown" id="homeNavItem">
+            <a href="#home1" class="nav-link active" id="homeLink" onclick="navigateTo('home1')">
+              <span>Home</span>
+              <svg class="dropdown-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="nav-dropdown-menu" id="homeDropdown">
+              <a href="#home1" class="dropdown-item" onclick="navigateTo('home1')">
+                <span class="dropdown-icon">🏠</span>
+                <div>
+                  <strong>Home 1: Residential &amp; Quick Supply</strong>
+                  <p>Potable RO+UV drinking water &amp; domestic tankers</p>
+                </div>
+              </a>
+              <a href="#home2" class="dropdown-item" onclick="navigateTo('home2')">
+                <span class="dropdown-icon">🚛</span>
+                <div>
+                  <strong>Home 2: Industrial &amp; Mega Logistics</strong>
+                  <p>20,000L mega-fleets for plants, construction &amp; bulk supply</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link" onclick="navigateTo('services')">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#rates" class="nav-link" onclick="navigateTo('rates')">Rate Chart</a>
+          </li>
+          <li class="nav-item">
+            <a href="#dashboard" class="nav-link" onclick="navigateTo('dashboard')">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link" onclick="navigateTo('contact')">Contact</a>
+          </li>
+        </ul>
+
+        <!-- Mobile Drawer Utilities (Visible inside open mobile menu only) -->
+        <div class="mobile-menu-actions">
+          <div class="mobile-util-row">
+            <button type="button" class="action-btn icon-btn" id="mobileRtlBtn" onclick="toggleDirection()" title="Toggle Layout Direction (RTL / LTR)" aria-label="Toggle Layout Direction">
+              <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 12h16M4 12l4-4M4 12l4 4M20 6H10M20 18H10"/>
+              </svg>
+            </button>
+            <button type="button" class="action-btn icon-btn" id="mobileThemeBtn" onclick="toggleTheme()" title="Toggle Dark / Light Mode" aria-label="Toggle Dark / Light Theme">
+              <svg class="action-icon theme-sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+              <svg class="action-icon theme-moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            </button>
+            <button type="button" class="action-btn portal-btn icon-btn" id="mobileLoginBtn" onclick="navigateTo('login')" title="Customer Login Portal" aria-label="Customer Login Portal">
+              <div class="user-avatar-mini">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+            </button>
+          </div>
+          <button type="button" class="btn btn-primary btn-block mt-2" onclick="openBookingModal()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" class="cta-tanker-icon"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>Book a Tanker</span>
+          </button>
+        </div>
+      </nav>
+
+      <!-- Right Side Utilities (Exact Order: RTL Toggle, Theme Toggle, Customer Login, Book a Tanker) -->
+      <div class="nav-actions">
+        <!-- 1. RTL/LTR Toggle (Icon Only) -->
+        <button type="button" class="action-btn icon-btn" id="rtlToggleBtn" title="Toggle Layout Direction (RTL / LTR)" aria-label="Toggle Layout Direction">
+          <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12h16M4 12l4-4M4 12l4 4M20 6H10M20 18H10"/>
+          </svg>
+        </button>
+
+        <!-- 2. Dark/Light Theme Toggle (Icon Only) -->
+        <button type="button" class="action-btn icon-btn" id="themeToggleBtn" title="Toggle Dark / Light Mode" aria-label="Toggle Dark / Light Theme">
+          <svg class="action-icon theme-sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="action-icon theme-moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- 3. Customer Login (User Icon Only) -->
+        <button type="button" class="action-btn portal-btn icon-btn" id="loginPortalBtn" onclick="navigateTo('login')" title="Customer Login Portal" aria-label="Customer Login Portal">
+          <div class="user-avatar-mini">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+        </button>
+
+        <!-- 4. Book a Tanker (Visible Button) -->
+        <button type="button" class="btn btn-primary nav-cta-btn" id="bookTankerCtaBtn" onclick="openBookingModal()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="cta-tanker-icon">
+            <rect x="1" y="3" width="15" height="13"/>
+            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+            <circle cx="5.5" cy="18.5" r="2.5"/>
+            <circle cx="18.5" cy="18.5" r="2.5"/>
+          </svg>
+          <span>Book a Tanker</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button type="button" class="mobile-toggle-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Multi-Page App Container -->
+  <main id="appContent">
+
+    <!-- ========================================================
+         PAGE 1: HOME 1 - RAPID RESIDENTIAL & EMERGENCY SUPPLY
+         ======================================================== -->
+    <section class="page-view active" id="page-home1">
+      <!-- Hero 1: Residential & Rapid Supply Focus -->
+      <section class="hero-section hero-home1">
+        <div class="container hero-grid">
+          <div class="hero-text-block">
+            <div class="tag-badge">
+              <span class="badge-icon">⚡</span> 30-45 Minute Express Household Delivery
+            </div>
+            <h1 class="hero-title">
+              Instant Clean Drinking &amp; Domestic <span class="highlight">Water Tanker</span> at Your Doorstep
+            </h1>
+            <p class="hero-lead">
+              Running dry? HydroSwift delivers food-grade, lab-certified RO &amp; UV purified water directly into your residential underground sump, overhead tank, or apartment reservoir. 24/7 automated dispatch with live GPS tracking.
+            </p>
+            <div class="hero-actions-row">
+              <button class="btn btn-primary btn-lg" onclick="openBookingModal('potable', 3000)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                Book Instant Home Tanker
+              </button>
+              <button class="btn btn-outline-white btn-lg" onclick="navigateTo('services')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"/></svg>
+                View All Services
+              </button>
+            </div>
+            <!-- Trust Highlights -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number">38 Mins</span>
+                <span class="stat-label">Average Arrival Time</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">99.98%</span>
+                <span class="stat-label">Purity Lab Score</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">120K+</span>
+                <span class="stat-label">Homes Replenished</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Quick Booking Card -->
+          <div class="hero-card-container">
+            <div class="quick-book-card">
+              <div class="quick-card-header">
+                <h3>⚡ Fast Tanker Dispatch</h3>
+                <p>Reserve in 60 seconds with live slot confirmation</p>
+              </div>
+              <form class="quick-book-form" onsubmit="handleQuickBook(event)">
+                <div class="form-group">
+                  <label for="qb-water-type">Water Purity Grade</label>
+                  <select id="qb-water-type" class="form-control" required>
+                    <option value="potable">RO+UV Drinking Water (Food Grade)</option>
+                    <option value="domestic">Domestic Sump &amp; Washing Water</option>
+                    <option value="swimming">Crystal Pool Fresh Water</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="qb-tanker-size">Tanker Capacity</label>
+                    <select id="qb-tanker-size" class="form-control" required>
+                      <option value="1000">1,000 Liters</option>
+                      <option value="3000" selected>3,000 Liters</option>
+                      <option value="5000">5,000 Liters</option>
+                      <option value="10000">10,000 Liters</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="qb-urgency">Delivery Slot</label>
+                    <select id="qb-urgency" class="form-control">
+                      <option value="emergency">🚨 Emergency</option>
+                      <option value="today" selected>Today</option>
+                      <option value="scheduled">Tomorrow</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="qb-location">Delivery Street / Area</label>
+                  <input type="text" id="qb-location" class="form-control" placeholder="e.g. 742 Evergreen Terrace, Sector 4" required>
+                </div>
+                <div class="quick-fare-box">
+                  <div class="fare-label">Estimated Delivered Total:</div>
+                  <div class="fare-amount" id="qb-fare-estimate">$42.00 <span class="fare-note">(Includes Delivery &amp; Pumping)</span></div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block btn-pulse">
+                  Proceed to Live Booking
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Residential Water Problems Solved -->
+      <section class="section-padding bg-surface">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="sub-title">Domestic Reliability</span>
+            <h2 class="section-title">Zero Water Scarcity For Your Family &amp; Community</h2>
+            <p class="section-desc">From sudden municipal pipe failures to scheduled residential tank filling, our high-speed tanker fleet ensures your taps never run dry.</p>
+          </div>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-img-wrap">
+                <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=600&q=80" alt="Drinking water purity testing" class="feature-img" loading="lazy">
+                <span class="feature-badge">Food-Grade Certified</span>
+              </div>
+              <div class="feature-body">
+                <h3>RO &amp; UV Drinking Tankers</h3>
+                <p>Equipped with 304 food-grade stainless steel barrels, sanitized before every refill. Guaranteed TDS below 85 PPM, zero pathogens, and sweet natural taste.</p>
+                <ul class="feature-list">
+                  <li>ISO 22000 &amp; WHO Standards Compliant</li>
+                  <li>Tamper-proof digitized digital seal valves</li>
+                  <li>Hygienic antimicrobial delivery hoses (up to 150 ft)</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-img-wrap">
+                <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=600&q=80" alt="Apartment community water pumping" class="feature-img" loading="lazy">
+                <span class="feature-badge">High Pressure Pumps</span>
+              </div>
+              <div class="feature-body">
+                <h3>Multi-Storey Overhead Pumping</h3>
+                <p>No need for manual hauling. Our tankers feature on-board German high-head pressure booster pumps capable of reaching up to 14th-floor rooftop storage tanks.</p>
+                <ul class="feature-list">
+                  <li>Up to 250 GPM rapid flow transfer speed</li>
+                  <li>Zero spillage silent pump coupling</li>
+                  <li>Underground sumps &amp; rooftop tanks filled seamlessly</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-img-wrap">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Modern residential neighborhood" class="feature-img" loading="lazy">
+                <span class="feature-badge">Automated Schedule</span>
+              </div>
+              <div class="feature-body">
+                <h3>Recurring Gated Community Contracts</h3>
+                <p>Never worry about ordering again. Set automated weekly or bi-weekly auto-refills for apartments, villa colonies, and housing societies with consolidated invoicing.</p>
+                <ul class="feature-list">
+                  <li>Priority dispatch during peak summer shortages</li>
+                  <li>Up to 22% volume discount on monthly retainers</li>
+                  <li>Live digital water consumption dashboard</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Residential Water Volume Calculator Section -->
+      <section class="section-padding bg-alt">
+        <div class="container">
+          <div class="calculator-banner">
+            <div class="calc-text">
+              <span class="sub-title">Not Sure How Much Water You Need?</span>
+              <h2>Interactive Household Tank Size Calculator</h2>
+              <p>Calculate exact liters required based on your family count, days of backup needed, and storage dimensions.</p>
+              
+              <div class="calc-control-group">
+                <label>Family Members / Residents: <strong id="calc-people-val">4 Persons</strong></label>
+                <input type="range" id="calc-people" min="1" max="25" value="4" class="range-slider" oninput="updateHomeCalculator()">
+              </div>
+
+              <div class="calc-control-group">
+                <label>Days of Water Supply Required: <strong id="calc-days-val">3 Days</strong></label>
+                <input type="range" id="calc-days" min="1" max="14" value="3" class="range-slider" oninput="updateHomeCalculator()">
+              </div>
+
+              <div class="calc-control-group">
+                <label>Garden, Car Wash &amp; Extra Domestic Usage:</label>
+                <select id="calc-usage-mode" class="form-control" onchange="updateHomeCalculator()">
+                  <option value="1.0">Standard Usage (135L/person/day)</option>
+                  <option value="1.3">High Usage + Lawn Watering (175L/person/day)</option>
+                  <option value="0.8">Conservation Mode (100L/person/day)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="calc-result-box">
+              <div class="calc-result-header">Recommended Tanker Size</div>
+              <div class="calc-result-value" id="calc-recommended-size">3,000 Liters</div>
+              <p class="calc-result-explanation" id="calc-explanation">Perfect for 4 persons for 3 days of standard domestic routine.</p>
+              <div class="calc-pricing-chip">Estimated Cost: <strong id="calc-cost-display">$42.00</strong></div>
+              <button class="btn btn-primary btn-block mt-3" onclick="openBookingFromCalc()">
+                Book This Recommended Size
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Tanker Capacity Highlights -->
+      <section class="section-padding bg-surface">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="sub-title">Fleet Sizing</span>
+            <h2 class="section-title">Standard Tanker Capacity Highlights</h2>
+            <p class="section-desc">From compact residential bowsers that fit narrow neighborhood lanes to heavy multi-storey supply carriers.</p>
+          </div>
+
+          <div class="capacity-cards-grid">
+            <div class="capacity-card">
+              <div class="cap-vol">1,000 Liters</div>
+              <span class="cap-type">Mini Urban Bowser</span>
+              <p>Tailored for compact residential lanes, individual villas, and emergency 1–2 day drinking water backup.</p>
+              <div class="cap-details">
+                <div><strong>Street Access:</strong> Narrow lanes (≥ 9 ft)</div>
+                <div><strong>Discharge Time:</strong> 8–10 Mins</div>
+                <div><strong>Standard Hose:</strong> 50 Ft Included</div>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block mt-3" onclick="openBookingModal('potable', 1000)">Book 1,000L</button>
+            </div>
+
+            <div class="capacity-card highlight-cap">
+              <div class="cap-badge">Most Popular</div>
+              <div class="cap-vol">3,000 Liters</div>
+              <span class="cap-type">Standard Family Tanker</span>
+              <p>Our most requested domestic volume. Perfectly replenishes standard household underground sumps and overhead tanks.</p>
+              <div class="cap-details">
+                <div><strong>Street Access:</strong> Standard street (≥ 12 ft)</div>
+                <div><strong>Discharge Time:</strong> 12–15 Mins</div>
+                <div><strong>Standard Hose:</strong> 100 Ft Included</div>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block mt-3" onclick="openBookingModal('potable', 3000)">Book 3,000L</button>
+            </div>
+
+            <div class="capacity-card">
+              <div class="cap-vol">5,000 Liters</div>
+              <span class="cap-type">Villa &amp; Community Medium</span>
+              <p>Engineered for duplex homes, community swimming pool top-ups, and commercial restaurants.</p>
+              <div class="cap-details">
+                <div><strong>Street Access:</strong> Two-way road (≥ 15 ft)</div>
+                <div><strong>Discharge Time:</strong> 18–22 Mins</div>
+                <div><strong>Standard Hose:</strong> 120 Ft High-Head</div>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block mt-3" onclick="openBookingModal('domestic', 5000)">Book 5,000L</button>
+            </div>
+
+            <div class="capacity-card">
+              <div class="cap-vol">10,000 Liters</div>
+              <span class="cap-type">Commercial Heavy Carrier</span>
+              <p>High-capacity carrier for apartment societies, construction concrete curing, and hospital reserves.</p>
+              <div class="cap-details">
+                <div><strong>Street Access:</strong> Commercial avenue (≥ 20 ft)</div>
+                <div><strong>Discharge Time:</strong> 25–30 Mins</div>
+                <div><strong>Standard Hose:</strong> 180 Ft Centrifugal</div>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block mt-3" onclick="openBookingModal('construction', 10000)">Book 10,000L</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Why Choose HydroSwift -->
+      <section class="section-padding bg-alt">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="sub-title">Uncompromising Quality</span>
+            <h2 class="section-title">Why Choose HydroSwift Water Supply?</h2>
+            <p class="section-desc">We combine food-grade transport hygiene with real-time digital telematics for a seamless delivery experience.</p>
+          </div>
+
+          <div class="why-us-grid">
+            <div class="why-card">
+              <div class="why-icon">⏱️</div>
+              <h4>30–45 Min Express Dispatch</h4>
+              <p>Strategically staged depots across North, South, East, and West city quadrants guarantee the fastest response time in the metropolitan area.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">🛡️</div>
+              <h4>100% AISI 304 Stainless Barrels</h4>
+              <p>Unlike rusty uncertified local bowsers, every tanker barrel is constructed from food-grade stainless steel with automated chemical steam sanitization.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">🔒</div>
+              <h4>Digital Geofenced Valve Seals</h4>
+              <p>Discharge valves are locked electronically at filling and unlock only when the tanker reaches the verified GPS geofence of your delivery location.</p>
+            </div>
+            <div class="why-card">
+              <div class="why-icon">🔬</div>
+              <h4>14-Parameter Certified Testing</h4>
+              <p>Every morning batch is tested for pH, TDS, turbidity, hardness, and microbial purity. Driver conducts an on-site meter test upon your request.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Water Quality & Safety Information -->
+      <section class="section-padding bg-surface">
+        <div class="container">
+          <div class="quality-info-box">
+            <div class="quality-info-text">
+              <span class="sub-title">Hygienic Standards</span>
+              <h2>Certified Potable Water Purity Standards</h2>
+              <p>We believe clean drinking water is a fundamental right. Our water is drawn from deep natural aquifers, passed through multi-stage industrial Reverse Osmosis (RO) membranes, and UV sterilized before barrel loading.</p>
+              
+              <div class="quality-badges-row">
+                <div class="q-badge-item">
+                  <span class="q-num">&lt; 85 PPM</span>
+                  <span class="q-desc">Total Dissolved Solids (TDS)</span>
+                </div>
+                <div class="q-badge-item">
+                  <span class="q-num">7.2 – 7.6</span>
+                  <span class="q-desc">Neutral pH Balance</span>
+                </div>
+                <div class="q-badge-item">
+                  <span class="q-num">&lt; 0.5 NTU</span>
+                  <span class="q-desc">Crystal Clear Turbidity</span>
+                </div>
+                <div class="q-badge-item">
+                  <span class="q-num">0.0 cfu</span>
+                  <span class="q-desc">Pathogen &amp; E. Coli Free</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Customer Testimonials -->
+      <section class="section-padding bg-alt">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="sub-title">Verified Reviews</span>
+            <h2 class="section-title">What Our Customers Say</h2>
+            <p class="section-desc">Over 120,000 successful residential and commercial water tanker replenishments delivered across the metro region.</p>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="testi-rating">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"When our apartment society's underground municipal line burst, HydroSwift dispatched three 10,000L tankers within 45 minutes. The booster pump filled our 8th-floor rooftop reservoir effortlessly."</p>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="David Richardson" class="testi-avatar" loading="lazy">
+                <div class="testi-author-info">
+                  <strong>David Richardson</strong>
+                  <span>Oakridge Heights Resident Association</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testi-rating">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"Running a restaurant requires dependable clean water every single morning. HydroSwift's recurring weekly subscription is completely hassle-free with clear digital meter readings and invoices."</p>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80" alt="Elena Martinez" class="testi-avatar" loading="lazy">
+                <div class="testi-author-info">
+                  <strong>Elena Martinez</strong>
+                  <span>General Manager, Blue Harbor Bistro</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-card">
+              <div class="testi-rating">⭐⭐⭐⭐⭐</div>
+              <p class="testi-text">"The live GPS tracker in the customer dashboard is brilliant. I could see the tanker approaching our street in real-time, and the driver Marcus was extremely courteous and professional."</p>
+              <div class="testi-author">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=200&q=80" alt="Rajesh Sharma" class="testi-avatar" loading="lazy">
+                <div class="testi-author-info">
+                  <strong>Rajesh Sharma</strong>
+                  <span>Homeowner, Villa Palm Meadows</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Frequently Asked Questions (Home FAQs) -->
+      <section class="section-padding bg-surface">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="sub-title">Quick Answers</span>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-desc">Common questions about residential tanker booking, delivery access, and water purity.</p>
+          </div>
+
+          <div class="faq-accordion-list">
+            <div class="faq-item active">
+              <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="true">
+                <span class="faq-question-text">How quickly can a water tanker reach my home?</span>
+                <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer-pane">
+                <div class="faq-answer-content">
+                  <p>For standard bookings, delivery is made within your selected 2-hour slot. For emergency bookings, our nearest quadrant depot dispatches immediately with an average arrival time of 30 to 45 minutes.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="false">
+                <span class="faq-question-text">Can your hoses reach overhead rooftop tanks?</span>
+                <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer-pane">
+                <div class="faq-answer-content">
+                  <p>Yes. All standard and commercial tankers are equipped with on-board high-head pressure booster pumps and food-grade hoses up to 180 feet, reaching rooftop tanks up to 14 storeys high.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="false">
+                <span class="faq-question-text">Is the water safe for direct drinking and cooking?</span>
+                <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer-pane">
+                <div class="faq-answer-content">
+                  <p>Yes. Our Potable Drinking Water is RO+UV treated in AISI 304 food-grade stainless tankers with tested TDS below 85 PPM, complying fully with national and WHO drinking water standards.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="false">
+                <span class="faq-question-text">What payment methods are supported?</span>
+                <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+              </button>
+              <div class="faq-answer-pane">
+                <div class="faq-answer-content">
+                  <p>You can pay securely online via credit/debit cards or digital wallets, or pay on delivery via cash or card terminal. A certified tax invoice is immediately generated on the customer portal.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: Final Booking Call-to-Action -->
+      <section class="home-final-cta">
+        <div class="container text-center">
+          <h2>Need Fresh, Certified Water Delivered Today?</h2>
+          <p>Book online in under 60 seconds or contact our central dispatch control room for immediate assistance.</p>
+          <div class="cta-actions-row">
+            <button class="btn btn-warning btn-lg" onclick="openBookingModal('potable', 3000)">
+              ⚡ Book Instant Tanker Online
+            </button>
+            <a href="tel:+18004937694" class="btn btn-outline-white btn-lg home-hotline-btn">
+              📞 24/7 Hotline: +1 (800) 493-7694
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transition to Home 2: Industrial Logistics -->
+      <div class="home-switch-banner">
+        <div class="container text-center">
+          <span class="sub-title">Enterprise Infrastructure</span>
+          <h2>Need Industrial Fleets or Construction Site Supply?</h2>
+          <p>Explore Home 2 for dedicated 20,000L mega-tankers, concrete batching water, and industrial demineralized supply lines.</p>
+          <button type="button" class="btn btn-primary" onclick="navigateTo('home2')">
+            <span>Explore Home 2: Industrial &amp; Fleets →</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PAGE 2: HOME 2 - INDUSTRIAL & BULK LOGISTICS SOLUTIONS
+         ======================================================== -->
+    <section class="page-view" id="page-home2">
+      <!-- Hero 2: Heavy Industrial & Construction Supply Focus -->
+      <section class="hero-section hero-home2" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.90), rgba(30, 41, 59, 0.88)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container hero-grid">
+          <div class="hero-text-block">
+            <div class="tag-badge badge-orange">
+              <span class="badge-icon">🚛</span> Heavy Industry &amp; Mega Commercial Logistics
+            </div>
+            <h1 class="hero-title">
+              High-Capacity <span class="highlight-orange">20,000L Mega-Tanker</span> Fleets For Plants &amp; Infrastructure
+            </h1>
+            <p class="hero-lead">
+              Serving concrete batching plants, pharmaceutical cleanrooms, factory cooling towers, soil compaction, and mega commercial complexes. Continuous multi-tanker supply chains with dedicated fleet dispatchers.
+            </p>
+            <div class="hero-actions-row">
+              <button class="btn btn-warning btn-lg" onclick="openBookingModal('industrial', 20000)">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                Deploy Industrial Fleet
+              </button>
+              <button class="btn btn-outline-white btn-lg" onclick="navigateTo('rates')">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                Commercial Volume Tiers
+              </button>
+            </div>
+            <!-- B2B Enterprise Metrics -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number">4.5M+ L</span>
+                <span class="stat-label">Daily Logistics Capacity</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">SLA Uptime Guarantee</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">450+</span>
+                <span class="stat-label">Active Industrial Plants</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Enterprise Tender / Corporate Dispatch Card -->
+          <div class="hero-card-container">
+            <div class="quick-book-card b2b-card">
+              <div class="quick-card-header">
+                <h3>🏭 Corporate &amp; Site Dispatch</h3>
+                <p>Heavy duty tankers (10KL - 25KL) with digital weighbridge certificates</p>
+              </div>
+              <form class="quick-book-form" onsubmit="handleIndustrialInquiry(event)">
+                <div class="form-group">
+                  <label for="ind-industry">Industry Sector</label>
+                  <select id="ind-industry" class="form-control" required>
+                    <option value="construction">Construction &amp; Concrete Batching</option>
+                    <option value="manufacturing">Manufacturing &amp; Cooling Towers</option>
+                    <option value="pharma">Pharma &amp; Demineralized Water (DM)</option>
+                    <option value="hospitality">Resorts, Hotels &amp; Malls</option>
+                    <option value="agriculture">Agriculture &amp; Livestock Bulk Drought Relief</option>
+                  </select>
+                </div>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="ind-daily-volume">Daily Volume Required</label>
+                    <select id="ind-daily-volume" class="form-control" required>
+                      <option value="20000">20,000 Liters</option>
+                      <option value="50000" selected>50,000 Liters</option>
+                      <option value="100000">100,000+ Liters</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="ind-purity">Water Specification</label>
+                    <select id="ind-purity" class="form-control" required>
+                      <option value="curing">Construction</option>
+                      <option value="ro">RO Industrial</option>
+                      <option value="dm">Demineralized</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="ind-project-name">Project / Site Name</label>
+                  <input type="text" id="ind-project-name" class="form-control" placeholder="e.g. Metro Line 4 Station Pier Work" required>
+                </div>
+                <div class="form-group">
+                  <label for="ind-phone">Site Supervisor Phone (10 Digits)</label>
+                  <input type="tel" id="ind-phone" class="form-control" placeholder="9876543210" maxlength="10" inputmode="numeric" data-validate="phone" required>
+                  <div class="field-error-msg" id="ind-phone-error"></div>
+                </div>
+                <button type="submit" class="btn btn-warning btn-block">
+                  Request Immediate Site Fleet Quote
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section: B2B Industrial Sectors Covered -->
+      <section class="section-padding bg-surface">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="sub-title sub-orange">Heavy Logistics Ecosystem</span>
+            <h2 class="section-title">Engineered Bulk Water Logistics For Mission-Critical Sectors</h2>
+            <p class="section-desc">Our dedicated industrial fleet features high-volume multi-axle stainless steel and epoxy-lined tankers backed by industrial flowmeters and electronic weighbridge logs.</p>
+          </div>
+
+          <div class="industrial-grid">
+            <div class="ind-card">
+              <div class="ind-icon-box">🏗️</div>
+              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=600&q=80" alt="Construction site water bowser" class="ind-img" loading="lazy">
+              <div class="ind-content">
+                <h3>Construction &amp; Compaction</h3>
+                <p>Guaranteed supply for concrete mixing, fly-ash compaction, brick curing, and site dust suppression. Fully compliant with IS 456 structural standards with zero chlorides.</p>
+                <span class="ind-tag">Tractor Bowsers &amp; 20KL Heavy Tankers</span>
+              </div>
+            </div>
+
+            <div class="ind-card">
+              <div class="ind-icon-box">⚡</div>
+              <img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?auto=format&fit=crop&w=600&q=80" alt="Industrial cooling towers and boiler feed" class="ind-img" loading="lazy">
+              <div class="ind-content">
+                <h3>Cooling Towers &amp; Boiler Feed</h3>
+                <p>Prevent scaling, corrosion, and unplanned boiler downtime. We supply ultra-low hardness softened water and demineralized (DM) water delivered in dedicated non-reactive tankers.</p>
+                <span class="ind-tag">Total Hardness &lt; 5 ppm Guaranteed</span>
+              </div>
+            </div>
+
+            <div class="ind-card">
+              <div class="ind-icon-box">🌾</div>
+              <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=600&q=80" alt="Agricultural irrigation water tanker" class="ind-img" loading="lazy">
+              <div class="ind-content">
+                <h3>Agricultural &amp; Livestock Relief</h3>
+                <p>Rapid emergency bulk water transport to orchards, dairy farms, horse stables, and greenhouse crops during canal maintenance or seasonal groundwater depletion.</p>
+                <span class="ind-tag">Low-Sodium Sweet Groundwater</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Industrial Fleet Telematics Showcase -->
+      <section class="section-padding bg-alt">
+        <div class="container">
+          <div class="telematics-showcase">
+            <div class="telematics-info">
+              <span class="sub-title sub-orange">Enterprise Control Room</span>
+              <h2>Centralized Fleet Dispatch &amp; Telematics</h2>
+              <p>Every commercial vehicle in our logistics fleet is equipped with real-time IoT sensors that broadcast water temperature, tank fill level, GPS coordinates, and discharge valve status directly to your corporate portal.</p>
+              
+              <div class="telematics-features">
+                <div class="t-feat">
+                  <div class="t-icon">🛰️</div>
+                  <div>
+                    <h4>Live Satellite GPS Tracking</h4>
+                    <p>Track your convoy route in real time with automated geofence entry and exit alerts.</p>
+                  </div>
+                </div>
+                <div class="t-feat">
+                  <div class="t-icon">📊</div>
+                  <div>
+                    <h4>Digital Flow Meter Dispensing</h4>
+                    <p>Tamper-proof electromagnetic flow meters ensure you receive the exact liter volume billed.</p>
+                  </div>
+                </div>
+                <div class="t-feat">
+                  <div class="t-icon">📄</div>
+                  <div>
+                    <h4>Automated ERP Invoicing &amp; Manifest</h4>
+                    <p>Instant digital proof of delivery (e-POD) with batch numbers, driver signatures, and lab certificates.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="telematics-visual">
+              <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Fleet logistics dispatch monitoring dashboard" class="telematics-img" loading="lazy">
+              <div class="telematics-badge-overlay">
+                <span class="pulse-dot"></span> 100% Connected Telematics Fleet
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Transition to Home 1: Residential Focus -->
+      <div class="home-switch-banner">
+        <div class="container text-center">
+          <span class="sub-title">Household &amp; Potable Supplies</span>
+          <h2>Looking for Residential RO+UV Drinking Water?</h2>
+          <p>Check Home 1 for 1,000L – 5,000L residential sumps, swimming pool refills, and instant household bookings.</p>
+          <button type="button" class="btn btn-outline" onclick="navigateTo('home1')">
+            <span>← Return to Home 1: Residential &amp; Quick Supply</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PAGE 3: SERVICES - SPECIALIZED WATER SUPPLY SOLUTIONS
+         ======================================================== -->
+    <section class="page-view" id="page-services">
+      <div class="page-banner" style="background-image: linear-gradient(rgba(2, 132, 199, 0.9), rgba(3, 105, 161, 0.92)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container text-center">
+          <span class="tag-badge">Specialized Solutions</span>
+          <h1 class="page-title">Comprehensive Water Tanker Services</h1>
+          <p class="page-subtitle">Tailored water distribution capabilities for residential, commercial, recreational, and civil infrastructure needs.</p>
+        </div>
+      </div>
+
+      <div class="section-padding bg-surface">
+        <div class="container">
+          <div class="services-matrix">
+
+            <!-- Service 1: Residential Water Supply -->
+            <article class="service-detail-card">
+              <div class="service-detail-img">
+                <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?auto=format&fit=crop&w=600&q=80" alt="Residential clean water delivery tanker truck" loading="lazy">
+                <span class="srv-badge">Grade A Potable</span>
+              </div>
+              <div class="service-detail-content">
+                <div class="srv-header-block">
+                  <div class="srv-icon">🚰</div>
+                  <h3>Residential Water Supply</h3>
+                </div>
+                <p class="srv-desc">Pure, tested, and sterilized drinking water delivered directly into household underground sumps and overhead tanks. Transported in 100% food-grade AISI 304 stainless steel tankers with multi-stage RO and UV sterilization.</p>
+                <div class="specs-grid">
+                  <div class="spec-col">
+                    <strong>TDS Level:</strong> &lt; 85 PPM
+                  </div>
+                  <div class="spec-col">
+                    <strong>pH Balance:</strong> 7.2 - 7.6 Neutral
+                  </div>
+                  <div class="spec-col">
+                    <strong>Tanker Sizes:</strong> 1KL, 3KL, 5KL
+                  </div>
+                  <div class="spec-col">
+                    <strong>Best For:</strong> Independent homes, villas, cooking
+                  </div>
+                </div>
+                <div class="srv-footer">
+                  <span class="srv-price-hint">From $28.00 / Tanker</span>
+                  <button class="btn btn-primary btn-sm" onclick="openBookingModal('potable', 3000)">Book Residential Water</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 2: Apartment and Gated Community Supply -->
+            <article class="service-detail-card">
+              <div class="service-detail-img">
+                <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" alt="Apartment buildings and residential society water logistics" loading="lazy">
+                <span class="srv-badge">High Pressure Booster</span>
+              </div>
+              <div class="service-detail-content">
+                <div class="srv-header-block">
+                  <div class="srv-icon">🏢</div>
+                  <h3>Apartment &amp; Gated Community Supply</h3>
+                </div>
+                <p class="srv-desc">Scheduled bulk deliveries and express replenishments for housing societies, gated townships, and condominiums. Equipped with high-head German booster pumps reaching rooftop tanks up to 14 storeys high.</p>
+                <div class="specs-grid">
+                  <div class="spec-col">
+                    <strong>Pumping Height:</strong> Up to 14th Floor
+                  </div>
+                  <div class="spec-col">
+                    <strong>Flow Rate:</strong> 250 GPM Rapid Transfer
+                  </div>
+                  <div class="spec-col">
+                    <strong>Tanker Sizes:</strong> 5KL, 10KL Multi-Unit
+                  </div>
+                  <div class="spec-col">
+                    <strong>Best For:</strong> High-rise apartments, society sumps
+                  </div>
+                </div>
+                <div class="srv-footer">
+                  <span class="srv-price-hint">From $58.00 / Tanker</span>
+                  <button class="btn btn-primary btn-sm" onclick="openBookingModal('domestic', 5000)">Book Society Supply</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 3: Commercial Water Supply (Hotels & Restaurants) -->
+            <article class="service-detail-card">
+              <div class="service-detail-img">
+                <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=600&q=80" alt="Commercial hotel and dining water supply" loading="lazy">
+                <span class="srv-badge">Commercial Grade</span>
+              </div>
+              <div class="service-detail-content">
+                <div class="srv-header-block">
+                  <div class="srv-icon">🍽️</div>
+                  <h3>Commercial Water Supply</h3>
+                </div>
+                <p class="srv-desc">Dedicated high-frequency clean water deliveries for hotels, restaurants, corporate cafeterias, bakeries, and cloud kitchens. Guaranteed food-grade compliance with instant TDS and microbiological verification.</p>
+                <div class="specs-grid">
+                  <div class="spec-col">
+                    <strong>Standards:</strong> HACCP &amp; Food Grade
+                  </div>
+                  <div class="spec-col">
+                    <strong>Supply Cadence:</strong> Daily / Shift Delivery
+                  </div>
+                  <div class="spec-col">
+                    <strong>Tanker Sizes:</strong> 3KL, 5KL, 10KL
+                  </div>
+                  <div class="spec-col">
+                    <strong>Best For:</strong> Hotels, resorts, commercial kitchens
+                  </div>
+                </div>
+                <div class="srv-footer">
+                  <span class="srv-price-hint">From $45.00 / Tanker</span>
+                  <button class="btn btn-primary btn-sm" onclick="openBookingModal('potable', 5000)">Book Commercial Water</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 4: Construction Site Water Supply -->
+            <article class="service-detail-card">
+              <div class="service-detail-img">
+                <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&w=600&q=80" alt="Construction water bowser supplying compaction and dust suppression" loading="lazy">
+                <span class="srv-badge">Civil Engineering</span>
+              </div>
+              <div class="service-detail-content">
+                <div class="srv-header-block">
+                  <div class="srv-icon">🏗️</div>
+                  <h3>Construction Site Water Supply</h3>
+                </div>
+                <p class="srv-desc">High-volume utility water tailored for concrete mixing, compaction tests, plaster curing, and dust control. Tested to ensure low alkalinity and zero corrosive salts that damage reinforcement steel.</p>
+                <div class="specs-grid">
+                  <div class="spec-col">
+                    <strong>Standard:</strong> IS 456 Structural Compliant
+                  </div>
+                  <div class="spec-col">
+                    <strong>Chlorides:</strong> &lt; 250 mg/L
+                  </div>
+                  <div class="spec-col">
+                    <strong>Tanker Sizes:</strong> 5KL, 10KL, 20KL
+                  </div>
+                  <div class="spec-col">
+                    <strong>Best For:</strong> Batching plants, curing, compaction
+                  </div>
+                </div>
+                <div class="srv-footer">
+                  <span class="srv-price-hint">From $38.00 / Tanker</span>
+                  <button class="btn btn-primary btn-sm" onclick="openBookingModal('construction', 10000)">Book Site Tanker</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 5: Industrial Demineralized (DM) Water -->
+            <article class="service-detail-card">
+              <div class="service-detail-img">
+                <img src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?auto=format&fit=crop&w=600&q=80" alt="High-purity industrial demineralized water treatment plant" loading="lazy">
+                <span class="srv-badge">Ultra Pure DM</span>
+              </div>
+              <div class="service-detail-content">
+                <div class="srv-header-block">
+                  <div class="srv-icon">🔬</div>
+                  <h3>Industrial Demineralized (DM) Water</h3>
+                </div>
+                <p class="srv-desc">Specifically engineered for pharmaceutical production, battery manufacturing, chemical synthesis, and high-pressure steam boilers. Zero electrical conductivity and total dissolved minerals removed.</p>
+                <div class="specs-grid">
+                  <div class="spec-col">
+                    <strong>Conductivity:</strong> &lt; 1.0 µS/cm at 25°C
+                  </div>
+                  <div class="spec-col">
+                    <strong>Silica:</strong> &lt; 0.02 ppm
+                  </div>
+                  <div class="spec-col">
+                    <strong>Vessels:</strong> Polyethylene &amp; SS316 Insulated
+                  </div>
+                  <div class="spec-col">
+                    <strong>Best For:</strong> Laboratories, power plants, electronics
+                  </div>
+                </div>
+                <div class="srv-footer">
+                  <span class="srv-price-hint">Specialized Formulation</span>
+                  <button class="btn btn-primary btn-sm" onclick="openBookingModal('industrial', 10000)">Request DM Tanker</button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Service 6: Bulk Water Tanker Supply & Events -->
+            <article class="service-detail-card">
+              <div class="service-detail-img">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=600&q=80" alt="Outdoor festival bulk water supply station" loading="lazy">
+                <span class="srv-badge">Bulk Logistics</span>
+              </div>
+              <div class="service-detail-content">
+                <div class="srv-header-block">
+                  <div class="srv-icon">🎪</div>
+                  <h3>Bulk Water Tanker Supply &amp; Events</h3>
+                </div>
+                <p class="srv-desc">Full-scale water logistics for outdoor weddings, corporate expos, sports tournaments, swimming pool filling, and music festivals. We supply static dispensing stations, restroom hookups, and standby bowsers.</p>
+                <div class="specs-grid">
+                  <div class="spec-col">
+                    <strong>Dispensing:</strong> Multi-tap hydrants &amp; mist lines
+                  </div>
+                  <div class="spec-col">
+                    <strong>Standby:</strong> 24-hr dedicated on-site driver
+                  </div>
+                  <div class="spec-col">
+                    <strong>Tanker Sizes:</strong> 5KL to 30KL Multi-Unit
+                  </div>
+                  <div class="spec-col">
+                    <strong>Best For:</strong> Stadiums, fairgrounds, pool fills
+                  </div>
+                </div>
+                <div class="srv-footer">
+                  <span class="srv-price-hint">Custom Event Packages</span>
+                  <button class="btn btn-primary btn-sm" onclick="openBookingModal('event', 5000)">Inquire Bulk Supply</button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ========================================================
+           ADDITIONAL TOPIC A: COVERAGE HUBS & DISTRIBUTION NETWORK
+           ======================================================== -->
+      <section class="section-padding bg-alt" id="services-coverage">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="sub-title">Strategic Depots</span>
+            <h2 class="section-title">Coverage Hubs &amp; Regional Delivery Areas</h2>
+            <p class="section-desc">4 strategically staged automated water terminals ensuring guaranteed 30–45 minute arrival across residential, commercial, and industrial corridors.</p>
+          </div>
+
+          <div class="coverage-hubs-grid">
+            <div class="hub-card">
+              <div class="hub-header">
+                <div class="hub-icon">🏙️</div>
+                <div>
+                  <span class="hub-status-badge">🟢 Operational (22 Active Tankers)</span>
+                  <h3>Hub 1: North Metro Terminal</h3>
+                </div>
+              </div>
+              <p class="hub-address">📍 1400 North Industrial Blvd, Gate 2 (Near Sector 1–15 Express Junction)</p>
+              <div class="hub-stats">
+                <div class="hub-stat-item"><strong>Avg Arrival:</strong> 28 Mins</div>
+                <div class="hub-stat-item"><strong>Coverage:</strong> Sectors 1–24, Uptown Residential, Tech Corridor</div>
+                <div class="hub-stat-item"><strong>Fleet Staged:</strong> 14 Mini Tankers, 8 Standard RO Units</div>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('potable', 3000)">Book From North Hub</button>
+            </div>
+
+            <div class="hub-card">
+              <div class="hub-header">
+                <div class="hub-icon">🏭</div>
+                <div>
+                  <span class="hub-status-badge">🟢 Operational (18 Active Tankers)</span>
+                  <h3>Hub 2: East Industrial Corridor</h3>
+                </div>
+              </div>
+              <p class="hub-address">📍 500 Metro Industrial Parkway, Gate 4 (Serving Manufacturing &amp; IT Hubs)</p>
+              <div class="hub-stats">
+                <div class="hub-stat-item"><strong>Avg Arrival:</strong> 35 Mins</div>
+                <div class="hub-stat-item"><strong>Coverage:</strong> Industrial Zones A–F, Biotech Park, Batching Plants</div>
+                <div class="hub-stat-item"><strong>Fleet Staged:</strong> 12 Mega 20KL Tankers, 6 DM Units</div>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('industrial', 20000)">Book From East Hub</button>
+            </div>
+
+            <div class="hub-card">
+              <div class="hub-header">
+                <div class="hub-icon">🌊</div>
+                <div>
+                  <span class="hub-status-badge">🟢 Operational (16 Active Tankers)</span>
+                  <h3>Hub 3: South Lake Reservoir Depot</h3>
+                </div>
+              </div>
+              <p class="hub-address">📍 820 Lakeview Highway (Serving Residential Societies &amp; Luxury Villas)</p>
+              <div class="hub-stats">
+                <div class="hub-stat-item"><strong>Avg Arrival:</strong> 32 Mins</div>
+                <div class="hub-stat-item"><strong>Coverage:</strong> South Sector, Villa Greens, Golf Links, Gated Estates</div>
+                <div class="hub-stat-item"><strong>Fleet Staged:</strong> 10 Standard Tankers, 6 Pool Water Units</div>
+              </div>
+              <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('swimming', 10000)">Book From South Hub</button>
+            </div>
+
+            <div class="hub-card">
+              <div class="hub-header">
+                <div class="hub-icon">🚨</div>
+                <div>
+                  <span class="hub-status-badge badge-warning">🟢 24/7 Red Alert Hub</span>
+                  <h3>Hub 4: West Hills &amp; Bypass Depot</h3>
+                </div>
+              </div>
+              <p class="hub-address">📍 Junction 12, West Expressway Bypass (Direct Highway Logistics Access)</p>
+              <div class="hub-stats">
+                <div class="hub-stat-item"><strong>Avg Arrival:</strong> 25 Mins</div>
+                <div class="hub-stat-item"><strong>Coverage:</strong> Outer Ring Road, Hills, Civil Sites, Emergency Corridors</div>
+                <div class="hub-stat-item"><strong>Fleet Staged:</strong> 8 Rapid Emergency Bowsers, 8 Heavy Tankers</div>
+              </div>
+              <button class="btn btn-warning btn-sm btn-block" onclick="openBookingModal('potable', 5000)">Book From West Hub</button>
+            </div>
+          </div>
+
+          <!-- Street Feasibility Matrix -->
+          <div class="street-feasibility-section mt-5">
+            <div class="section-header text-center">
+              <span class="sub-title">Delivery Feasibility</span>
+              <h2 class="section-title">Street Width &amp; Parking Clearance Guide</h2>
+              <p class="section-desc">Ensure seamless delivery by verifying your access road width before booking.</p>
+            </div>
+
+            <div class="feasibility-grid">
+              <div class="feasibility-card">
+                <div class="f-badge-pill">Narrow Residential Lanes</div>
+                <h4>Mini Tankers (1,000L – 3,000L)</h4>
+                <p>Designed for compact residential lanes, narrow dead-ends, and congested urban neighborhoods where standard heavy trucks cannot enter.</p>
+                <ul class="feasibility-specs">
+                  <li><strong>Min Street Width:</strong> 9 to 11 Feet</li>
+                  <li><strong>Turning Radius:</strong> 6.2 Meters</li>
+                  <li><strong>Hose Reach:</strong> Up to 150 Feet Included</li>
+                </ul>
+              </div>
+
+              <div class="feasibility-card highlight-border">
+                <div class="f-badge-pill pill-primary">Most Popular Domestic</div>
+                <h4>Standard Tankers (5,000L – 6,000L)</h4>
+                <p>Ideal for apartment complexes, villa communities, private pools, and residential community sumps with standard two-lane access.</p>
+                <ul class="feasibility-specs">
+                  <li><strong>Min Street Width:</strong> 14 to 16 Feet</li>
+                  <li><strong>Turning Radius:</strong> 8.5 Meters</li>
+                  <li><strong>Hose Reach:</strong> Up to 200 Feet High-Pressure</li>
+                </ul>
+              </div>
+
+              <div class="feasibility-card">
+                <div class="f-badge-pill pill-warning">Heavy &amp; Mega Logistics</div>
+                <h4>Industrial Tankers (10,000L – 20,000L)</h4>
+                <p>High-volume multi-axle tankers engineered for heavy construction sites, manufacturing plants, cooling towers, and commercial infrastructure.</p>
+                <ul class="feasibility-specs">
+                  <li><strong>Min Street Width:</strong> 20+ Feet Arterial Roads</li>
+                  <li><strong>Turning Radius:</strong> 12.0 Meters</li>
+                  <li><strong>Hose Reach:</strong> 2.5" &amp; 4" Storz High-Flow</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================
+           ADDITIONAL TOPIC B: FLEET & WATER QUALITY LABORATORY
+           ======================================================== -->
+      <section class="section-padding bg-surface" id="services-fleet">
+        <div class="container">
+          <div class="fleet-intro-grid">
+            <div class="fleet-intro-text">
+              <span class="sub-title">Hygienic Transport</span>
+              <h2>Never Compromise On The Water Your Loved Ones Consume</h2>
+              <p>Unlike unregistered local tractor bowsers that harbor rust, biofilm, and toxic algae, every HydroSwift tanker is constructed from heavy-gauge surgical stainless steel with automated CIP (Clean-In-Place) chemical steam sanitization every 48 hours.</p>
+              
+              <div class="fleet-specs-list">
+                <div class="spec-row">
+                  <div class="spec-badge-icon">🛡️</div>
+                  <div>
+                    <h4>AISI 304 Food-Grade Barrels</h4>
+                    <p>Mirror-finish internal welding prevents bacterial colonies, lime scale, and sediment buildup.</p>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-badge-icon">🔬</div>
+                  <div>
+                    <h4>Daily 14-Parameter Quality Audit</h4>
+                    <p>Every tanker load is tested for pH, TDS, Turbidity, E. Coli, Chlorine, and Total Hardness prior to dispatch.</p>
+                  </div>
+                </div>
+                <div class="spec-row">
+                  <div class="spec-badge-icon">🔒</div>
+                  <div>
+                    <h4>Tamper-Evident Digital Valve Seals</h4>
+                    <p>Discharge valves are unlocked electronically only when the tanker enters the GPS geofence of your delivery address.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="fleet-intro-media">
+              <img src="https://images.unsplash.com/photo-1581093588401-fbb62a02f120?auto=format&fit=crop&w=800&q=80" alt="Water quality laboratory testing technician" class="fleet-feature-img" loading="lazy">
+              <div class="lab-audit-sticker">
+                <div class="audit-badge-icon">🏅</div>
+                <div>
+                  <strong>ISO 9001 &amp; ISO 22000</strong>
+                  <p>Certified Drinking Water Distribution Fleet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================
+           ADDITIONAL TOPIC C: EMERGENCY SOS CRISIS RAPID RESPONSE
+           ======================================================== -->
+      <section class="section-padding bg-alt" id="services-emergency">
+        <div class="container">
+          <div class="emergency-callout-card">
+            <div class="emergency-callout-content">
+              <div class="sos-pulsing-badge">
+                <span class="sos-dot"></span> RED ALERT STANDBY ACTIVE
+              </div>
+              <h2>Experiencing a Critical Water Outage Right Now?</h2>
+              <p>Our priority crisis dispatch team bypasses regular queues. Direct tanker rerouting is initiated within 90 seconds of receiving your distress signal.</p>
+              <div class="emergency-action-buttons">
+                <a href="tel:+18004937694" class="btn btn-warning btn-lg sos-call-btn">
+                  📞 Call Emergency SOS: +1 (800) 493-7694
+                </a>
+                <button class="btn btn-outline-white btn-lg" onclick="openBookingModal('potable', 5000)">
+                  ⚡ Instant Digital SOS Booking
+                </button>
+              </div>
+            </div>
+            <div class="emergency-callout-meta">
+              <div class="sos-meta-box">
+                <span class="sos-num">15–30</span>
+                <span class="sos-lbl">Minute Rapid Dispatch Target</span>
+              </div>
+              <div class="sos-meta-box">
+                <span class="sos-num">38</span>
+                <span class="sos-lbl">Dedicated Emergency Bowsers</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4-Step Crisis SOP -->
+          <div class="emergency-sop-section mt-5">
+            <div class="section-header text-center">
+              <span class="sub-title">Rapid Response Protocol</span>
+              <h2 class="section-title">How Our Emergency SOS Dispatch Works</h2>
+              <p class="section-desc">From distress signal to pressurized water flow in four strictly audited operational steps.</p>
+            </div>
+
+            <div class="sop-steps-grid">
+              <div class="sop-step-card">
+                <div class="sop-step-num">01</div>
+                <h4>Instant Geofence Alert</h4>
+                <p>The moment you submit an SOS request, our GPS dispatcher system identifies and reroutes the closest patrol tanker in your sector within 60 seconds.</p>
+              </div>
+
+              <div class="sop-step-card">
+                <div class="sop-step-num">02</div>
+                <h4>Priority Corridor Transit</h4>
+                <p>Emergency vehicles proceed via optimized fast-transit corridors with real-time telematics keeping you updated via live SMS and map coordinates.</p>
+              </div>
+
+              <div class="sop-step-card">
+                <div class="sop-step-num">03</div>
+                <h4>High-Head Booster Coupling</h4>
+                <p>On arrival, our technician connects high-pressure food-grade hoses with German booster pumps discharging up to 250 gallons per minute into your sump.</p>
+              </div>
+
+              <div class="sop-step-card">
+                <div class="sop-step-num">04</div>
+                <h4>Digital Quality Handover</h4>
+                <p>Tamper-evident seals are photographed, flowmeter readouts confirmed, and certified purity report handed over with instant digital invoice.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+
+    <!-- ========================================================
+         PAGE 4: RATE CHART - TRANSPARENT CAPACITY & DISTANCE PRICING
+         ======================================================== -->
+    <section class="page-view" id="page-rates">
+      <div class="page-banner" style="background-image: linear-gradient(rgba(14, 116, 144, 0.9), rgba(15, 23, 42, 0.92)), url('https://images.unsplash.com/photo-1616401784845-180882ba9ba8?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container text-center">
+          <span class="tag-badge">Honest &amp; Upfront</span>
+          <h1 class="page-title">Transparent Water Tanker Rate Chart</h1>
+          <p class="page-subtitle">Zero hidden surcharge. Dynamic distance tiers, verified meter readings, and volume discounts.</p>
+        </div>
+      </div>
+
+      <div class="section-padding bg-surface">
+        <div class="container">
+
+          <!-- Section: Featured Capacity Highlights with Realistic Tanker Imagery -->
+          <div class="section-header text-center mb-5">
+            <span class="sub-title">Transparent Capacity Tiers</span>
+            <h2 class="section-title">Verified Tanker Sizing &amp; Pricing Directory</h2>
+            <p class="section-desc">Upfront, transparent pricing tailored to your exact storage volume. Zero hidden charges, digital flowmeter verification, and on-board booster pumping included.</p>
+          </div>
+
+          <div class="rate-capacity-grid mb-5">
+            <!-- 1,000 L -->
+            <div class="rate-cap-card">
+              <div class="rate-cap-img-wrap">
+                <img src="https://images.unsplash.com/photo-1758445042200-6ce9c1cc89d7?auto=format&fit=crop&w=600&q=80" alt="1000 Liters municipal mini urban water bowser and street sprinkler tanker delivery" loading="lazy">
+                <span class="rate-cap-tag">1,000 Liters</span>
+              </div>
+              <div class="rate-cap-body">
+                <h3>1,000 L Mini Urban Bowser</h3>
+                <div class="rate-cap-price">From $28.00 <small>(≤ 5 km base)</small></div>
+                <p>Engineered for tight residential lanes, individual villas, and compact sumps where full-size heavy trucks cannot enter.</p>
+                <ul class="rate-cap-specs">
+                  <li><strong>Street Width:</strong> Minimum 9–10 ft lane</li>
+                  <li><strong>Hose Reach:</strong> 50 ft included</li>
+                  <li><strong>Discharge Time:</strong> 8–10 minutes</li>
+                  <li><strong>Best For:</strong> 1–2 days household backup</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('potable', 1000)">Book 1,000L Tanker</button>
+              </div>
+            </div>
+
+            <!-- 2,000 L -->
+            <div class="rate-cap-card">
+              <div class="rate-cap-img-wrap">
+                <img src="https://images.pexels.com/photos/17168925/pexels-photo-17168925/free-photo-of-tank-truck-watering-sand-heap-and-field.jpeg?auto=compress&cs=tinysrgb&w=800" alt="2000 Liters compact water tanker supply truck with high-pressure discharge" loading="lazy">
+                <span class="rate-cap-tag">2,000 Liters</span>
+              </div>
+              <div class="rate-cap-body">
+                <h3>2,000 L Compact Tanker</h3>
+                <div class="rate-cap-price">From $36.00 <small>(≤ 5 km base)</small></div>
+                <p>The perfect mid-size solution for small households, duplex homes, rooftop tank refills, and residential lawn irrigation.</p>
+                <ul class="rate-cap-specs">
+                  <li><strong>Street Width:</strong> Minimum 11 ft street</li>
+                  <li><strong>Hose Reach:</strong> 75 ft included</li>
+                  <li><strong>Discharge Time:</strong> 10–12 minutes</li>
+                  <li><strong>Best For:</strong> 2–4 persons domestic routine</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('potable', 2000)">Book 2,000L Tanker</button>
+              </div>
+            </div>
+
+            <!-- 5,000 L -->
+            <div class="rate-cap-card highlight-rate-card">
+              <div class="featured-ribbon">Most Popular</div>
+              <div class="rate-cap-img-wrap">
+                <img src="https://images.unsplash.com/photo-1780332524558-6c56c0241030?auto=format&fit=crop&w=600&q=80" alt="5000 Liters certified drinking water tanker truck for commercial and villa supply" loading="lazy">
+                <span class="rate-cap-tag">5,000 Liters</span>
+              </div>
+              <div class="rate-cap-body">
+                <h3>5,000 L Commercial &amp; Villa</h3>
+                <div class="rate-cap-price">From $58.00 <small>(≤ 5 km base)</small></div>
+                <p>Our workhorse carrier for residential societies, large villas, restaurants, and private swimming pool refills.</p>
+                <ul class="rate-cap-specs">
+                  <li><strong>Street Width:</strong> Minimum 14–16 ft road</li>
+                  <li><strong>Hose Reach:</strong> 120 ft high-pressure</li>
+                  <li><strong>Booster Pump:</strong> Up to 14th floor head</li>
+                  <li><strong>Best For:</strong> Gated communities, dining</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('domestic', 5000)">Book 5,000L Tanker</button>
+              </div>
+            </div>
+
+            <!-- 10,000 L -->
+            <div class="rate-cap-card rate-cap-card-heavy">
+              <div class="rate-cap-img-wrap">
+                <img src="https://images.unsplash.com/photo-1591768793355-74d04bb6608f?auto=format&fit=crop&w=600&q=80" alt="10000 Liters heavy commercial water tanker carrier" loading="lazy">
+                <span class="rate-cap-tag">10,000 Liters</span>
+              </div>
+              <div class="rate-cap-body">
+                <h3>10,000 L Heavy Carrier</h3>
+                <div class="rate-cap-price">From $89.00 <small>(≤ 5 km base)</small></div>
+                <p>High-volume heavy-duty transport for apartment society master sumps, civil engineering sites, and community reserves.</p>
+                <ul class="rate-cap-specs">
+                  <li><strong>Street Width:</strong> Minimum 20 ft road</li>
+                  <li><strong>Hose Reach:</strong> 180 ft industrial</li>
+                  <li><strong>Flow Rate:</strong> 250 GPM rapid pump</li>
+                  <li><strong>Best For:</strong> Societies, hotels, pools</li>
+                </ul>
+                <button class="btn btn-primary btn-sm btn-block" onclick="openBookingModal('construction', 10000)">Book 10,000L Tanker</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Live Fare Estimator -->
+          <div class="fare-estimator-card">
+            <div class="estimator-header">
+              <h2>🧮 Interactive Tanker Fare &amp; Delivery Calculator</h2>
+              <p>Select your required water type, tanker volume, and delivery distance to see the exact price quotation before ordering.</p>
+            </div>
+            
+            <div class="estimator-controls-grid">
+              <div class="form-group">
+                <label for="est-water-grade">1. Select Water Quality Grade</label>
+                <select id="est-water-grade" class="form-control" onchange="calculateRateEstimate()">
+                  <option value="potable" data-base="35">Potable RO+UV Drinking</option>
+                  <option value="domestic" data-base="28" selected>Domestic / Utility Water</option>
+                  <option value="construction" data-base="25">Construction &amp; Compaction</option>
+                  <option value="pool" data-base="45">Swimming Pool Filtered Fresh</option>
+                  <option value="dm" data-base="80">Demineralized Ultra-Pure</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="est-tanker-capacity">2. Tanker Tank Capacity</label>
+                <select id="est-tanker-capacity" class="form-control" onchange="calculateRateEstimate()">
+                  <option value="1000" data-mult="1.0">1,000 Liters</option>
+                  <option value="2000" data-mult="1.2">2,000 Liters</option>
+                  <option value="3000" data-mult="1.4">3,000 Liters</option>
+                  <option value="5000" data-mult="1.9" selected>5,000 Liters</option>
+                  <option value="10000" data-mult="2.8">10,000 Liters</option>
+                  <option value="20000" data-mult="4.8">20,000 Liters</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>3. Distance From Nearest Depot: <strong id="est-distance-val">6 km</strong></label>
+                <input type="range" id="est-distance-range" min="1" max="50" value="6" class="range-slider" oninput="calculateRateEstimate()">
+                <div class="slider-ticks">
+                  <span>1 km (Local)</span>
+                  <span>25 km</span>
+                  <span>50 km (Regional)</span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="est-time-slot">4. Delivery Urgency Slot</label>
+                <select id="est-time-slot" class="form-control" onchange="calculateRateEstimate()">
+                  <option value="regular" data-surcharge="0">Standard Scheduled Slot</option>
+                  <option value="same-day" data-surcharge="5" selected>Same-Day Priority</option>
+                  <option value="sos" data-surcharge="15">🚨 Emergency Rapid SOS</option>
+                  <option value="night" data-surcharge="10">Night Shift Delivery</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="estimator-breakdown">
+              <div class="breakdown-item">
+                <span>Base Water Cost:</span>
+                <strong id="est-cost-water">$38.00</strong>
+              </div>
+              <div class="breakdown-item">
+                <span>Distance Transit Fuel:</span>
+                <strong id="est-cost-distance">$1.00</strong>
+              </div>
+              <div class="breakdown-item">
+                <span>Pumping &amp; Hose Handling:</span>
+                <strong id="est-cost-pumping">$0.00 (Included)</strong>
+              </div>
+              <div class="breakdown-item">
+                <span>Urgency Surcharge:</span>
+                <strong id="est-cost-surcharge">$5.00</strong>
+              </div>
+              <div class="breakdown-total">
+                <div class="total-text">
+                  <span class="total-title">Total Estimated Price</span>
+                  <span class="total-subtitle">(Taxes &amp; Pumping Included)</span>
+                </div>
+                <div class="total-amount" id="est-total-cost">$44.00</div>
+              </div>
+            </div>
+
+            <div class="estimator-action-bar">
+              <button class="btn btn-primary btn-lg" onclick="bookFromEstimator()">
+                Book This Exact Quote Now
+              </button>
+              <button class="btn btn-outline" onclick="printRateChart()">
+                🖨️ Print / Save Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Master Pricing Table Matrix -->
+          <div class="table-container mt-5">
+            <div class="table-title-bar">
+              <h3>Standard Tanker Capacity &amp; Distance Rate Matrix</h3>
+              <span class="table-legend">Rates in USD ($). Base rates apply within 5 km radius of city depots.</span>
+            </div>
+            <div class="table-responsive">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Tanker Capacity</th>
+                    <th>Water Grade</th>
+                    <th>Base Price (≤ 5km)</th>
+                    <th>Per Km Transit (&gt; 5km)</th>
+                    <th>Included Hose Length</th>
+                    <th>Pumping Method</th>
+                    <th>Direct Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>1,000 Liters</strong><br><small>Mini Urban Bowser</small></td>
+                    <td><span class="pill-badge pill-blue">Potable RO+UV</span></td>
+                    <td><strong>$28.00</strong></td>
+                    <td>+$1.10 / km</td>
+                    <td>50 ft hose</td>
+                    <td>Electric booster pump</td>
+                    <td><button class="btn btn-sm btn-primary" onclick="openBookingModal('potable', 1000)">Book 1KL</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>2,000 Liters</strong><br><small>Compact Domestic</small></td>
+                    <td><span class="pill-badge pill-blue">Potable RO+UV</span></td>
+                    <td><strong>$36.00</strong></td>
+                    <td>+$1.20 / km</td>
+                    <td>75 ft hose</td>
+                    <td>Diesel pressure pump</td>
+                    <td><button class="btn btn-sm btn-primary" onclick="openBookingModal('potable', 2000)">Book 2KL</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>3,000 Liters</strong><br><small>Standard Household</small></td>
+                    <td><span class="pill-badge pill-blue">Potable RO+UV</span></td>
+                    <td><strong>$42.00</strong></td>
+                    <td>+$1.30 / km</td>
+                    <td>100 ft hose</td>
+                    <td>Diesel pressure pump</td>
+                    <td><button class="btn btn-sm btn-primary" onclick="openBookingModal('potable', 3000)">Book 3KL</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>5,000 Liters</strong><br><small>Villa / Restaurant</small></td>
+                    <td><span class="pill-badge pill-green">Drinking / Sump</span></td>
+                    <td><strong>$58.00</strong></td>
+                    <td>+$1.60 / km</td>
+                    <td>120 ft hose</td>
+                    <td>High-head 250 GPM</td>
+                    <td><button class="btn btn-sm btn-primary" onclick="openBookingModal('domestic', 5000)">Book 5KL</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>10,000 Liters</strong><br><small>Community / Pool</small></td>
+                    <td><span class="pill-badge pill-teal">Filtered Swimming</span></td>
+                    <td><strong>$89.00</strong></td>
+                    <td>+$2.00 / km</td>
+                    <td>150 ft hose</td>
+                    <td>Heavy centrifugal pump</td>
+                    <td><button class="btn btn-sm btn-primary" onclick="openBookingModal('pool', 10000)">Book 10KL</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>10,000 Liters</strong><br><small>Heavy Construction</small></td>
+                    <td><span class="pill-badge pill-orange">Construction Civil</span></td>
+                    <td><strong>$72.00</strong></td>
+                    <td>+$1.80 / km</td>
+                    <td>100 ft hose</td>
+                    <td>Gravity &amp; power spray</td>
+                    <td><button class="btn btn-sm btn-primary" onclick="openBookingModal('construction', 10000)">Book 10KL</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>20,000 Liters</strong><br><small>Multi-Axle Mega</small></td>
+                    <td><span class="pill-badge pill-purple">Industrial / DM</span></td>
+                    <td><strong>$148.00</strong></td>
+                    <td>+$2.60 / km</td>
+                    <td>200 ft industrial</td>
+                    <td>Twin turbine 450 GPM</td>
+                    <td><button class="btn btn-sm btn-primary" onclick="openBookingModal('industrial', 20000)">Book 20KL</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Subscription Savings Cards -->
+          <div class="mt-5">
+            <div class="section-header text-center">
+              <span class="sub-title">Save Up to 25%</span>
+              <h2 class="section-title">Automated Recurring Retainer Plans</h2>
+              <p class="section-desc">For commercial buildings, residential societies, and restaurants with scheduled weekly deliveries.</p>
+            </div>
+
+            <div class="plans-grid">
+              <div class="plan-card">
+                <div class="plan-header">
+                  <h3>Residential Monthly</h3>
+                  <div class="plan-price">$139<span>/month</span></div>
+                  <p class="plan-desc">4x 3,000L deliveries per month</p>
+                </div>
+                <ul class="plan-features">
+                  <li>✓ 12,000 Liters total allocation</li>
+                  <li>✓ Free priority time-slot reservation</li>
+                  <li>✓ Free hose extension up to 120 ft</li>
+                  <li>✓ Zero peak-hour cancellation fees</li>
+                </ul>
+                <button class="btn btn-outline btn-block" onclick="openBookingModal('potable', 3000)">Subscribe Plan</button>
+              </div>
+
+              <div class="plan-card plan-featured">
+                <div class="featured-ribbon">Most Popular</div>
+                <div class="plan-header">
+                  <h3>Society &amp; Commercial</h3>
+                  <div class="plan-price">$389<span>/month</span></div>
+                  <p class="plan-desc">8x 5,000L deliveries per month</p>
+                </div>
+                <ul class="plan-features">
+                  <li>✓ 40,000 Liters total allocation</li>
+                  <li>✓ Guaranteed 45-minute emergency SOS</li>
+                  <li>✓ Dedicated account manager</li>
+                  <li>✓ Monthly consolidated GST/Tax invoice</li>
+                </ul>
+                <button class="btn btn-primary btn-block" onclick="openBookingModal('domestic', 5000)">Subscribe Plan</button>
+              </div>
+
+              <div class="plan-card">
+                <div class="plan-header">
+                  <h3>Mega Industrial</h3>
+                  <div class="plan-price">$1,190<span>/month</span></div>
+                  <p class="plan-desc">Continuous fleet contract</p>
+                </div>
+                <ul class="plan-features">
+                  <li>✓ 200,000+ Liters monthly volume</li>
+                  <li>✓ 20KL multi-axle dedicated tankers</li>
+                  <li>✓ Digital flow-meter IoT data feed</li>
+                  <li>✓ Net 30 day credit billing terms</li>
+                </ul>
+                <button class="btn btn-outline btn-block" onclick="navigateTo('contact')">Contact Enterprise Desk</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Step-by-Step Booking Instructions -->
+          <div class="booking-guide-card mt-5">
+            <div class="checklist-header text-center">
+              <span class="sub-title">How To Order</span>
+              <h3>Simple 4-Step Water Tanker Booking Procedure</h3>
+              <p>Book your delivery in seconds and track your tanker live from depot gate to your doorstep.</p>
+            </div>
+            <div class="checklist-steps">
+              <div class="check-step">
+                <div class="check-step-header">
+                  <div class="check-icon">1️⃣</div>
+                  <strong>Select Water Grade &amp; Capacity</strong>
+                </div>
+                <p>Choose from 1,000L, 2,000L, 5,000L, or 10,000L in food-grade drinking, domestic utility, or pool fresh water.</p>
+              </div>
+              <div class="check-step">
+                <div class="check-step-header">
+                  <div class="check-icon">2️⃣</div>
+                  <strong>Enter Delivery Address &amp; Slot</strong>
+                </div>
+                <p>Provide your street address and choose instant priority express (30–45 mins) or scheduled 2-hour window.</p>
+              </div>
+              <div class="check-step">
+                <div class="check-step-header">
+                  <div class="check-icon">3️⃣</div>
+                  <strong>Live GPS Tracking &amp; Driver Contact</strong>
+                </div>
+                <p>Follow your tanker's real-time coordinates, speed, and ETA on your Customer Dashboard with direct driver phone access.</p>
+              </div>
+              <div class="check-step">
+                <div class="check-step-header">
+                  <div class="check-icon">4️⃣</div>
+                  <strong>Flowmeter Check &amp; Digital Invoice</strong>
+                </div>
+                <p>Confirm the digital meter reading on completion and instantly download your certified tax receipt.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Bulk Orders, Tanker Availability & Delivery Coverage Info -->
+          <div class="bulk-coverage-card mt-5">
+            <div class="bulk-grid">
+              <div class="bulk-col">
+                <div class="bulk-icon">🚛</div>
+                <h4>High Tanker Availability &amp; Fleet Staging</h4>
+                <p>With 38 active road tankers staged across 4 quadrant depots, HydroSwift maintains 99.4% same-day slot fulfillment even during high-demand summer months.</p>
+                <ul class="bulk-list">
+                  <li>Fleet reserve maintained for emergency municipal outages</li>
+                  <li>Real-time automated depot dispatch balancing</li>
+                  <li>Dedicated night delivery fleet for minimal commercial disruption</li>
+                </ul>
+              </div>
+              <div class="bulk-col">
+                <div class="bulk-icon">📦</div>
+                <h4>Bulk Orders &amp; Commercial Contracts</h4>
+                <p>Industrial manufacturing plants, concrete batching sites, and gated communities requiring 50,000L+ per week receive volume discounts up to 25% with 30-day billing credit.</p>
+                <ul class="bulk-list">
+                  <li>Multi-tanker synchronized simultaneous discharge</li>
+                  <li>Dedicated commercial fleet account manager</li>
+                  <li>Consolidated monthly GST invoices with water analysis certificates</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section: Pricing Notes & FAQs (Accordion Presentation) -->
+          <div class="faq-container mt-5">
+            <div class="section-header text-center">
+              <span class="sub-title">Billing Clarity</span>
+              <h2 class="section-title">Rate Chart &amp; Pricing FAQs</h2>
+              <p class="section-desc">Straightforward answers regarding distance tariffs, pumping charges, and invoice transparency.</p>
+            </div>
+
+            <div class="faq-accordion-list" id="rateFaqAccordion">
+              <div class="faq-item active">
+                <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="true">
+                  <span class="faq-question-text">What is included in the base rate?</span>
+                  <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="faq-answer-pane">
+                  <div class="faq-answer-content">
+                    <p>The base rate includes full water filling, certified laboratory testing, vehicle mobilization, standard food-grade hose deployment up to 100 feet, and on-board booster pumping into your sump or tank.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="false">
+                  <span class="faq-question-text">How are distance transit surcharges calculated?</span>
+                  <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="faq-answer-pane">
+                  <div class="faq-answer-content">
+                    <p>Base rates apply to all deliveries within a 5 km radius of any of our 4 city depots. For locations beyond 5 km, a nominal per-kilometer transit fuel surcharge is added as transparently shown in the calculator above.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="false">
+                  <span class="faq-question-text">Is there an extra fee for pumping to upper floors?</span>
+                  <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="faq-answer-pane">
+                  <div class="faq-answer-content">
+                    <p>No. Standard pumping to rooftop tanks up to 4 storeys is fully included. For high-rise buildings between 5 and 14 storeys, our heavy 250 GPM high-head booster pump is deployed at zero extra charge.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question-btn" type="button" onclick="toggleFaqAccordion(this)" aria-expanded="false">
+                  <span class="faq-question-text">What happens if my tank fills before the tanker is empty?</span>
+                  <svg class="faq-arrow-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+                <div class="faq-answer-pane">
+                  <div class="faq-answer-content">
+                    <p>Our tankers feature calibrated digital flowmeters. You only pay for the exact volume of water dispensed into your tank as confirmed by the on-site digital meter reading.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PAGE 5: CUSTOMER DASHBOARD - BOOKING, LIVE GPS & BILLING
+         ======================================================== -->
+    <section class="page-view" id="page-dashboard">
+      <div class="dashboard-wrapper">
+        <!-- Dashboard Sidebar Navigation -->
+        <aside class="dash-sidebar">
+          <div class="dash-brand-block">
+            <div class="logo-symbol">
+              <svg viewBox="0 0 40 40" fill="none" width="32" height="32">
+                <rect width="40" height="40" rx="10" fill="#0284C7"/>
+                <path d="M20 9C20 9 12 19.5 12 24.5C12 28.9183 15.5817 32.5 20 32.5C24.4183 32.5 28 28.9183 28 24.5C28 19.5 20 9 20 9Z" fill="#FFFFFF"/>
+                <path d="M16 23.5C16 21 18 17.5 19 16C18.5 19 19.5 21.5 21 23C22.5 24.5 23.5 26.5 22 28.5C20.5 30.5 17 29.5 16 27C15.5 25.75 16 24.5 16 23.5Z" fill="#38BDF8"/>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="logo-title">HydroSwift</span>
+              <span class="logo-subtitle">Customer Portal</span>
+            </div>
+          </div>
+
+          <div class="dash-user-card">
+            <div class="dash-avatar">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Customer avatar portrait" class="avatar-photo">
+              <span class="online-indicator" title="Connected to Dispatch"></span>
+            </div>
+            <div class="dash-user-meta">
+              <h4 id="dash-display-name">Sarah Jenkins</h4>
+              <span class="dash-badge">Premium Resident</span>
+              <small class="dash-acc-id">Account #HS-88219</small>
+            </div>
+          </div>
+
+          <nav class="dash-nav">
+            <button class="dash-nav-link active" onclick="switchDashTab('live-track')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+              <span>Live GPS Delivery Tracker</span>
+              <span class="dash-pulse-pill">1 Active</span>
+            </button>
+            <button class="dash-nav-link" onclick="switchDashTab('new-booking')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg>
+              <span>Book New Tanker</span>
+            </button>
+            <button class="dash-nav-link" onclick="switchDashTab('history')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              <span>Past Orders &amp; Logs</span>
+            </button>
+            <button class="dash-nav-link" onclick="switchDashTab('billing')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+              <span>Invoices &amp; Billing</span>
+            </button>
+            <button class="dash-nav-link dash-nav-return" onclick="navigateTo('home1')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              <span>Return to Website</span>
+            </button>
+          </nav>
+
+          <div class="dash-support-box">
+            <div class="support-title">Need Urgent Dispatch Help?</div>
+            <p>Direct priority line to control room:</p>
+            <a href="tel:+18004937694" class="btn btn-sm btn-outline-white btn-block">+1 (800) 493-7694</a>
+          </div>
+        </aside>
+
+        <!-- Dashboard Main Panel -->
+        <div class="dash-main-area">
+
+          <!-- TAB 1: LIVE DELIVERY TRACKER WITH GPS MAP SIMULATOR -->
+          <div class="dash-tab-content active" id="dash-tab-live-track">
+            <div class="dash-header-bar">
+              <div>
+                <div class="dash-live-badge-row">
+                  <span class="badge-pulse"><span class="pulse-dot"></span> LIVE TRACKING ACTIVE</span>
+                  <span class="live-route-tag">Vehicle Dispatched &bull; GPS Signal Strong</span>
+                </div>
+                <h2>Live Tanker Delivery Tracking</h2>
+                <p>Real-time telemetry, driver status, and ETA for your ongoing water replenishment.</p>
+              </div>
+              <div class="dash-actions">
+                <button class="btn btn-outline btn-sm" onclick="simulateNextDeliveryStep()">
+                  ⚡ Simulate Driver Progress
+                </button>
+                <button class="btn btn-primary btn-sm" onclick="switchDashTab('new-booking')">
+                  + Book Another Tanker
+                </button>
+              </div>
+            </div>
+
+            <!-- Booking Success Confirmation Alert Banner -->
+            <div id="dash-booking-confirmation" class="booking-success-card" style="display: none;">
+              <div class="booking-success-header">
+                <span class="success-check-icon">✓</span>
+                <div>
+                  <h4 id="dash-confirm-title">Tanker Delivery Confirmed &amp; Dispatched!</h4>
+                  <p id="dash-confirm-details">Your order has been assigned to driver Marcus Vance (#4028). Real-time telemetry is live below.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Active Order Status Card -->
+            <div class="active-tracker-card">
+              <div class="tracker-summary-bar">
+                <div class="track-meta-item">
+                  <span class="meta-label">Active Order:</span>
+                  <strong>#TK-99420</strong>
+                </div>
+                <div class="track-meta-item">
+                  <span class="meta-label">Tanker Capacity:</span>
+                  <strong>3,000L (RO Drinking Water)</strong>
+                </div>
+                <div class="track-meta-item">
+                  <span class="meta-label">Vehicle Reg:</span>
+                  <strong>NY-TK-4028 (Volvo FL)</strong>
+                </div>
+                <div class="track-meta-item">
+                  <span class="meta-label">Estimated Delivery:</span>
+                  <strong class="text-accent" id="eta-countdown">Arriving in 14 Mins</strong>
+                </div>
+              </div>
+
+              <!-- Interactive Multi-Step Timeline -->
+              <div class="delivery-stepper">
+                <div class="step-item completed" id="step-1">
+                  <div class="step-circle">✓</div>
+                  <div class="step-label">Order Confirmed</div>
+                  <div class="step-time">10:14 AM</div>
+                </div>
+                <div class="step-connector active" id="conn-1"></div>
+
+                <div class="step-item completed" id="step-2">
+                  <div class="step-circle">✓</div>
+                  <div class="step-label">Tanker Filled &amp; Sealed</div>
+                  <div class="step-time">10:28 AM (TDS: 68 ppm)</div>
+                </div>
+                <div class="step-connector active" id="conn-2"></div>
+
+                <div class="step-item active" id="step-3">
+                  <div class="step-circle"><span class="step-spinner"></span></div>
+                  <div class="step-label">In Transit (On Route)</div>
+                  <div class="step-time" id="step-3-status">2.4 km away on Main Ave</div>
+                </div>
+                <div class="step-connector" id="conn-3"></div>
+
+                <div class="step-item" id="step-4">
+                  <div class="step-circle">4</div>
+                  <div class="step-label">Arrived &amp; Pumping</div>
+                  <div class="step-time">Pending Arrival</div>
+                </div>
+                <div class="step-connector" id="conn-4"></div>
+
+                <div class="step-item" id="step-5">
+                  <div class="step-circle">5</div>
+                  <div class="step-label">Completed &amp; Signed</div>
+                  <div class="step-time">Awaiting Dispense</div>
+                </div>
+              </div>
+
+              <!-- Live Simulated GPS Map View -->
+              <div class="gps-map-container">
+                <div class="simulated-map" id="simulatedMap">
+                  <!-- Road grid lines and destination -->
+                  <div class="map-depot-pin" title="Central Aqua Depot #4">
+                    <div class="pin-marker depot-marker">🏭</div>
+                    <span>Depot Hub #4</span>
+                  </div>
+
+                  <!-- Animated Tanker GPS Marker -->
+                  <div class="map-tanker-pin" id="mapTankerPin" style="left: 48%; top: 42%;">
+                    <div class="tanker-gps-badge">
+                      <span class="pulsing-ping"></span>
+                      🚛 HydroSwift #4028
+                    </div>
+                  </div>
+
+                  <!-- Destination Customer Pin -->
+                  <div class="map-destination-pin" title="Your Delivery Address">
+                    <div class="pin-marker user-marker">📍</div>
+                    <span>742 Evergreen Terrace (You)</span>
+                  </div>
+
+                  <!-- Live Map Overlay Hud -->
+                  <div class="map-hud-overlay">
+                    <div class="hud-item">
+                      <span class="hud-label">Vehicle Speed:</span>
+                      <strong id="hud-speed">42 km/h</strong>
+                    </div>
+                    <div class="hud-item">
+                      <span class="hud-label">Tank Purity:</span>
+                      <strong>100% Sealed (Valves Locked)</strong>
+                    </div>
+                    <div class="hud-item">
+                      <span class="hud-label">Water Temp:</span>
+                      <strong>18.4°C Fresh</strong>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Driver Contact Card -->
+                <div class="driver-contact-card">
+                  <div class="driver-info">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Tanker driver photo" class="driver-photo">
+                    <div>
+                      <h4 class="driver-name">Marcus Vance</h4>
+                      <p class="driver-rating">⭐ 4.95 (680+ Deliveries) | HazMat &amp; Food-Safety Certified</p>
+                      <p class="driver-vehicle">Volvo FL-6 Stainless Steel Tanker | Tanker ID: #4028</p>
+                    </div>
+                  </div>
+                  <div class="driver-actions">
+                    <button class="btn btn-outline btn-sm" onclick="alert('Calling Driver Marcus: +1 (555) 304-9821')">
+                      📞 Call Driver
+                    </button>
+                    <button class="btn btn-outline btn-sm" onclick="alert('SMS Sent: Driver notified about gate code.')">
+                      💬 Message Notes
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Quick Water Metrics Overview -->
+            <div class="dash-stats-grid mt-4">
+              <div class="metric-card">
+                <div class="metric-icon">💧</div>
+                <div class="metric-info">
+                  <span class="metric-num">24,000 L</span>
+                  <span class="metric-title">Total Water Delivered (YTD)</span>
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-icon">📅</div>
+                <div class="metric-info">
+                  <span class="metric-num">7 Orders</span>
+                  <span class="metric-title">Successful Replenishments</span>
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-icon">⭐</div>
+                <div class="metric-info">
+                  <span class="metric-num">380 Pts</span>
+                  <span class="metric-title">Loyalty Water Credits ($38 Value)</span>
+                </div>
+              </div>
+              <div class="metric-card">
+                <div class="metric-icon">🛡️</div>
+                <div class="metric-info">
+                  <span class="metric-num">100% Pass</span>
+                  <span class="metric-title">Water Lab Health Audits</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- TAB 2: NEW TANKER BOOKING WIZARD -->
+          <div class="dash-tab-content" id="dash-tab-new-booking">
+            <div class="dash-header-bar">
+              <div>
+                <h2>Book a New Tanker Delivery</h2>
+                <p>Customise your tanker size, schedule preferred time window, and get instant driver assignment.</p>
+              </div>
+            </div>
+
+            <div class="booking-wizard-card">
+              <form id="dashBookingForm" onsubmit="handleDashboardBooking(event)">
+                <div class="wizard-step-section">
+                  <h3>1. Select Water Type</h3>
+                  <div class="water-type-selection-grid">
+                    <label class="water-radio-card active">
+                      <input type="radio" name="db_water_type" value="potable" checked onchange="updateDashPrice()">
+                      <div class="radio-card-body">
+                        <span class="rc-icon">🚰</span>
+                        <strong>Potable Drinking Water</strong>
+                        <small>RO+UV filtered, &lt;85 PPM TDS, 304 food-grade stainless tank.</small>
+                        <span class="rc-price">$42.00 (Base)</span>
+                      </div>
+                    </label>
+
+                    <label class="water-radio-card">
+                      <input type="radio" name="db_water_type" value="domestic" onchange="updateDashPrice()">
+                      <div class="radio-card-body">
+                        <span class="rc-icon">🏡</span>
+                        <strong>Domestic Utility Water</strong>
+                        <small>Fresh sweet groundwater for general cleaning, bathing, and gardens.</small>
+                        <span class="rc-price">$35.00 (Base)</span>
+                      </div>
+                    </label>
+
+                    <label class="water-radio-card">
+                      <input type="radio" name="db_water_type" value="pool" onchange="updateDashPrice()">
+                      <div class="radio-card-body">
+                        <span class="rc-icon">🏊</span>
+                        <strong>Swimming Pool Water</strong>
+                        <small>Crystal clear pre-balanced water ready for immediate swimming.</small>
+                        <span class="rc-price">$55.00 (Base)</span>
+                      </div>
+                    </label>
+
+                    <label class="water-radio-card">
+                      <input type="radio" name="db_water_type" value="construction" onchange="updateDashPrice()">
+                      <div class="radio-card-body">
+                        <span class="rc-icon">🏗️</span>
+                        <strong>Construction Utility</strong>
+                        <small>Structural grade, low-chloride for batching, curing &amp; dust control.</small>
+                        <span class="rc-price">$48.00 (Base)</span>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="wizard-step-section mt-4">
+                  <h3>2. Select Tanker Size &amp; Pumping Requirements</h3>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="db_capacity">Tanker Tank Volume</label>
+                      <select id="db_capacity" class="form-control" onchange="updateDashPrice()" required>
+                        <option value="1000">1,000 Liters (Mini Bowser)</option>
+                        <option value="3000" selected>3,000 Liters (Standard Residence)</option>
+                        <option value="5000">5,000 Liters (Large Villa / Small Complex)</option>
+                        <option value="10000">10,000 Liters (Community / Commercial)</option>
+                        <option value="20000">20,000 Liters (Mega Multi-Axle Industrial)</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="db_pump_type">Destination Storage Location</label>
+                      <select id="db_pump_type" class="form-control">
+                        <option value="underground">Underground Sump / Ground Tank</option>
+                        <option value="overhead">Overhead Rooftop Tank</option>
+                        <option value="pool">Direct Swimming Pool Inflow</option>
+                        <option value="industrial">Industrial Storage Silo / Reactor</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="db_hose_length">Hose Length Required</label>
+                      <select id="db_hose_length" class="form-control">
+                        <option value="50">Up to 50 Feet (Driveway Access - Free)</option>
+                        <option value="100" selected>Up to 100 Feet (Standard Garden / Back Access)</option>
+                        <option value="150">Up to 150 Feet (Long Distance Pumping +$10)</option>
+                      </select>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="db_date">Delivery Date &amp; Time Slot</label>
+                      <input type="datetime-local" id="db_date" class="form-control" required>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="wizard-step-section mt-4">
+                  <h3>3. Customer Verification Details</h3>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="db_name">Contact Person Name (Alphabets only)</label>
+                      <input type="text" id="db_name" class="form-control" value="Sarah Jenkins" placeholder="Full Name" data-validate="name" required>
+                      <div class="field-error-msg" id="db_name-error"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="db_phone">Driver Contact Mobile (10 Digits)</label>
+                      <input type="tel" id="db_phone" class="form-control" value="9876543210" placeholder="9876543210" maxlength="10" inputmode="numeric" data-validate="phone" required>
+                      <div class="field-error-msg" id="db_phone-error"></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="db_email">Receipt Email Address (lowercase only)</label>
+                    <input type="email" id="db_email" class="form-control" value="sarah.jenkins@hydroswift.com" placeholder="name@domain.com" data-validate="email" required>
+                    <div class="field-error-msg" id="db_email-error"></div>
+                  </div>
+                </div>
+
+                <div class="wizard-step-section mt-4">
+                  <h3>4. Delivery Address &amp; Gate Instructions</h3>
+                  <div class="form-group">
+                    <label for="db_address">Street Address / Society Name</label>
+                    <input type="text" id="db_address" class="form-control" value="742 Evergreen Terrace, Sector 4" placeholder="Full delivery address" required>
+                    <div class="field-error-msg" id="db_address-error"></div>
+                  </div>
+                  <div class="form-group">
+                    <label for="db_notes">Special Driver Instructions (Optional)</label>
+                    <input type="text" id="db_notes" class="form-control" placeholder="e.g. Park next to gate 2, underground sump is on the left corner of driveway">
+                  </div>
+                </div>
+
+                <!-- Price Summary Bar -->
+                <div class="booking-summary-banner mt-4">
+                  <div>
+                    <span class="summary-label">Confirmed Fare (All Included):</span>
+                    <div class="summary-price" id="db_calculated_total">$42.00</div>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-lg" id="dbConfirmBookingBtn">
+                    Confirm &amp; Dispatch Tanker
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+          <!-- TAB 3: ORDER HISTORY & AUDIT LOGS -->
+          <div class="dash-tab-content" id="dash-tab-history">
+            <div class="dash-header-bar">
+              <div>
+                <h2>Order History &amp; Water Logs</h2>
+                <p>Complete historical log of all tanker deliveries, quantities, and water quality certificates.</p>
+              </div>
+              <div>
+                <button class="btn btn-outline btn-sm" onclick="exportOrderHistory()">
+                  📥 Export CSV Statement
+                </button>
+              </div>
+            </div>
+
+            <div class="table-responsive">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Order #</th>
+                    <th>Date &amp; Time</th>
+                    <th>Water Grade</th>
+                    <th>Volume</th>
+                    <th>Driver &amp; Tanker</th>
+                    <th>Purity TDS</th>
+                    <th>Total Paid</th>
+                    <th>Receipt</th>
+                  </tr>
+                </thead>
+                <tbody id="historyTableBody">
+                  <tr>
+                    <td><strong>#TK-99420</strong></td>
+                    <td>Today, 10:14 AM</td>
+                    <td><span class="pill-badge pill-blue">Potable RO+UV</span></td>
+                    <td>3,000 L</td>
+                    <td>Marcus Vance (#4028)</td>
+                    <td>68 PPM (Passed)</td>
+                    <td>$42.00</td>
+                    <td><button class="btn btn-xs btn-outline" onclick="openInvoiceModal('TK-99420', '3,000L Potable RO+UV', '$42.00', 'Nov 04, 2026')">View Invoice</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>#TK-98841</strong></td>
+                    <td>Oct 28, 2026</td>
+                    <td><span class="pill-badge pill-blue">Potable RO+UV</span></td>
+                    <td>3,000 L</td>
+                    <td>Devon Miller (#3012)</td>
+                    <td>72 PPM (Passed)</td>
+                    <td>$42.00</td>
+                    <td><button class="btn btn-xs btn-outline" onclick="openInvoiceModal('TK-98841', '3,000L Potable RO+UV', '$42.00', 'Oct 28, 2026')">View Invoice</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>#TK-97103</strong></td>
+                    <td>Oct 15, 2026</td>
+                    <td><span class="pill-badge pill-teal">Swimming Pool Fresh</span></td>
+                    <td>10,000 L</td>
+                    <td>Carlos Ortiz (#7841)</td>
+                    <td>110 PPM (Passed)</td>
+                    <td>$89.00</td>
+                    <td><button class="btn btn-xs btn-outline" onclick="openInvoiceModal('TK-97103', '10,000L Pool Fresh Water', '$89.00', 'Oct 15, 2026')">View Invoice</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>#TK-95490</strong></td>
+                    <td>Sep 30, 2026</td>
+                    <td><span class="pill-badge pill-green">Domestic Utility</span></td>
+                    <td>5,000 L</td>
+                    <td>Devon Miller (#3012)</td>
+                    <td>140 PPM (Passed)</td>
+                    <td>$58.00</td>
+                    <td><button class="btn btn-xs btn-outline" onclick="openInvoiceModal('TK-95490', '5,000L Domestic Sump Water', '$58.00', 'Sep 30, 2026')">View Invoice</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+
+          <!-- TAB 4: BILLING, STATEMENTS & TAX INVOICES -->
+          <div class="dash-tab-content" id="dash-tab-billing">
+            <div class="dash-header-bar">
+              <div>
+                <h2>Customer Billing &amp; Tax Invoices</h2>
+                <p>Download certified tax invoices, view GST breakdown, and manage payment methods.</p>
+              </div>
+            </div>
+
+            <div class="billing-cards-row">
+              <div class="billing-card">
+                <span class="bc-label">Account Balance</span>
+                <div class="bc-val text-success">$0.00 <small>Due</small></div>
+                <p class="bc-note">All past invoices cleared. Next auto-billing for subscription on Dec 01, 2026.</p>
+              </div>
+              <div class="billing-card">
+                <span class="bc-label">Payment Method On File</span>
+                <div class="bc-val">💳 Visa •••• 4829</div>
+                <p class="bc-note">Expires 08/29 | Auto-Pay Active</p>
+              </div>
+              <div class="billing-card">
+                <span class="bc-label">GST / Tax Identification</span>
+                <div class="bc-val">US-TAX-889124</div>
+                <p class="bc-note">Invoices formatted for corporate expense claims</p>
+              </div>
+            </div>
+
+            <div class="table-responsive mt-4">
+              <table class="pricing-table">
+                <thead>
+                  <tr>
+                    <th>Invoice ID</th>
+                    <th>Billing Date</th>
+                    <th>Service Description</th>
+                    <th>Tax / VAT</th>
+                    <th>Total Amount</th>
+                    <th>Status</th>
+                    <th>Download</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>INV-2026-104</strong></td>
+                    <td>Nov 04, 2026</td>
+                    <td>3,000L Express Residential Tanker Refill</td>
+                    <td>$3.78 (9%)</td>
+                    <td><strong>$42.00</strong></td>
+                    <td><span class="pill-badge pill-green">Paid Online</span></td>
+                    <td><button class="btn btn-sm btn-outline" onclick="openInvoiceModal('INV-2026-104', '3,000L Express Residential Refill', '$42.00', 'Nov 04, 2026')">📄 Print Invoice</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>INV-2026-098</strong></td>
+                    <td>Oct 28, 2026</td>
+                    <td>3,000L Standard Residential Tanker Refill</td>
+                    <td>$3.78 (9%)</td>
+                    <td><strong>$42.00</strong></td>
+                    <td><span class="pill-badge pill-green">Paid Online</span></td>
+                    <td><button class="btn btn-sm btn-outline" onclick="openInvoiceModal('INV-2026-098', '3,000L Standard Residential Refill', '$42.00', 'Oct 28, 2026')">📄 Print Invoice</button></td>
+                  </tr>
+                  <tr>
+                    <td><strong>INV-2026-081</strong></td>
+                    <td>Oct 15, 2026</td>
+                    <td>10,000L Swimming Pool Fresh Balancing Water</td>
+                    <td>$8.01 (9%)</td>
+                    <td><strong>$89.00</strong></td>
+                    <td><span class="pill-badge pill-green">Paid Online</span></td>
+                    <td><button class="btn btn-sm btn-outline" onclick="openInvoiceModal('INV-2026-081', '10,000L Pool Fresh Water Refill', '$89.00', 'Oct 15, 2026')">📄 Print Invoice</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PAGE 7: CUSTOMER LOGIN & AUTHENTICATION PORTAL
+         ======================================================== -->
+    <section class="page-view" id="page-login">
+      <div class="auth-page-container">
+        <div class="auth-card">
+          <!-- Top Layout inside the Login Card: Brand on Left, Theme & RTL on Right -->
+          <div class="auth-card-top-bar">
+            <!-- Left Side: Brand Logo and Brand Name (Non-clickable) -->
+            <div class="login-brand-display">
+              <div class="logo-symbol">
+                <svg viewBox="0 0 40 40" fill="none" width="38" height="38" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="40" height="40" rx="10" fill="url(#login-card-logo-grad)"/>
+                  <path d="M20 9C20 9 12 19.5 12 24.5C12 28.9183 15.5817 32.5 20 32.5C24.4183 32.5 28 28.9183 28 24.5C28 19.5 20 9 20 9Z" fill="#FFFFFF"/>
+                  <path d="M16 23.5C16 21 18 17.5 19 16C18.5 19 19.5 21.5 21 23C22.5 24.5 23.5 26.5 22 28.5C20.5 30.5 17 29.5 16 27C15.5 25.75 16 24.5 16 23.5Z" fill="#38BDF8"/>
+                  <defs>
+                    <linearGradient id="login-card-logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="#0284C7"/>
+                      <stop offset="1" stop-color="#0369A1"/>
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="brand-text">
+                <span class="logo-title">Hydro<span class="text-accent">Swift</span></span>
+                <span class="logo-subtitle">Water Tanker Logistics</span>
+              </div>
+            </div>
+
+            <!-- Right Side: Theme Toggle & RTL/LTR Toggle -->
+            <div class="login-top-actions">
+              <button type="button" class="action-btn icon-only-btn circle-btn" onclick="toggleTheme()" id="loginThemeBtn" title="Toggle Dark / Light Theme" aria-label="Toggle Dark or Light Theme">
+                <span class="theme-icon" id="loginThemeIcon">🌙</span>
+              </button>
+              <button type="button" class="action-btn icon-only-btn circle-btn" onclick="toggleDirection()" id="loginRtlBtn" title="Toggle Layout Direction (RTL / LTR)" aria-label="Toggle RTL or LTR Direction">
+                <span class="dir-icon">⇄</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Centre Content: Segmented Toggle for Sign In vs Create Account -->
+          <div class="login-segment-tabs">
+            <button type="button" class="segment-tab-btn active" id="tabSignIn" onclick="switchLoginMode('signin')">Sign In</button>
+            <button type="button" class="segment-tab-btn" id="tabCreateAcc" onclick="switchLoginMode('create')">Create Account</button>
+          </div>
+
+          <!-- In-place Dummy Mode Notice Banner -->
+          <div class="login-demo-banner" id="loginDemoBanner">
+            <div class="demo-banner-icon">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div class="demo-banner-content">
+              <strong class="demo-banner-title" id="demoBannerTitle">Demo mode: Authentication is not enabled.</strong>
+              <p class="demo-banner-desc" id="demoBannerDesc">Frontend demonstration only. No external redirect or popup has occurred, and you remain on this page.</p>
+            </div>
+          </div>
+
+          <!-- FORM 1: SIGN IN -->
+          <form class="auth-form" id="dummyLoginForm" onsubmit="handleDummySubmit(event, 'signin')">
+            <div class="form-group">
+              <label for="login-email">EMAIL ADDRESS OR USERNAME <span class="required-star">*</span></label>
+              <input type="text" id="login-email" class="form-control" placeholder="elena.vance@zenith.design" value="sarah.jenkins@hydroswift.com" required>
+            </div>
+
+            <div class="form-group">
+              <div class="label-with-link">
+                <label for="login-password">PASSWORD <span class="required-star">*</span></label>
+                <button type="button" class="link-btn-text" onclick="handleDummyAction('password_reset')">Forgot password?</button>
+              </div>
+              <div class="password-input-wrap">
+                <input type="password" id="login-password" class="form-control" value="••••••••••••" required>
+                <button type="button" class="pwd-toggle-btn" onclick="togglePasswordVisibility('login-password', this)" title="Show/Hide Password" aria-label="Toggle password visibility">
+                  <svg class="eye-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-check-row">
+              <label class="checkbox-label">
+                <input type="checkbox" checked>
+                <span>Remember me on this browser</span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">
+              Sign In to Customer Portal
+            </button>
+
+            <div class="auth-divider">
+              <span>or</span>
+            </div>
+
+            <div class="social-login-grid">
+              <button type="button" class="btn btn-social btn-google" onclick="handleDummyAction('google')">
+                <svg class="social-btn-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <span>Continue with Google</span>
+              </button>
+              
+              <button type="button" class="btn btn-social btn-apple" onclick="handleDummyAction('apple')">
+                <svg class="social-btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.93 2.74 1 .08 2.02-.49 2.64-1.24z"/>
+                </svg>
+                <span>Continue with Apple</span>
+              </button>
+            </div>
+
+            <div class="auth-bottom-switch">
+              Don't have a member profile yet? <button type="button" class="link-switch" onclick="switchLoginMode('create')">Create Account</button>
+            </div>
+          </form>
+
+          <!-- FORM 2: CREATE ACCOUNT -->
+          <form class="auth-form" id="dummyRegisterForm" style="display: none;" onsubmit="handleDummySubmit(event, 'register')">
+            <div class="form-group">
+              <label for="reg-name">FULL NAME <span class="required-star">*</span></label>
+              <input type="text" id="reg-name" class="form-control" placeholder="David Miller" required>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-email">EMAIL ADDRESS <span class="required-star">*</span></label>
+              <input type="email" id="reg-email" class="form-control" placeholder="david@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-phone">MOBILE NUMBER (10 DIGITS) <span class="required-star">*</span></label>
+              <input type="tel" id="reg-phone" class="form-control" placeholder="9876543210" maxlength="10" inputmode="numeric" required>
+            </div>
+
+            <div class="form-group">
+              <label for="reg-password">CREATE PASSWORD <span class="required-star">*</span></label>
+              <div class="password-input-wrap">
+                <input type="password" id="reg-password" class="form-control" placeholder="••••••••••••" required>
+                <button type="button" class="pwd-toggle-btn" onclick="togglePasswordVisibility('reg-password', this)" title="Show/Hide Password" aria-label="Toggle password visibility">
+                  <svg class="eye-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg mt-3">
+              Create Account
+            </button>
+
+            <div class="auth-divider">
+              <span>or</span>
+            </div>
+
+            <div class="social-login-grid">
+              <button type="button" class="btn btn-social btn-google" onclick="handleDummyAction('google')">
+                <svg class="social-btn-icon" viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                  <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                  <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                  <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <span>Continue with Google</span>
+              </button>
+              
+              <button type="button" class="btn btn-social btn-apple" onclick="handleDummyAction('apple')">
+                <svg class="social-btn-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.38c.62-.75 1.04-1.8 0.92-2.85-.9.04-1.99.6-2.63 1.35-.57.65-1.07 1.72-.93 2.74 1 .08 2.02-.49 2.64-1.24z"/>
+                </svg>
+                <span>Continue with Apple</span>
+              </button>
+            </div>
+
+            <div class="auth-bottom-switch">
+              Already have an account? <button type="button" class="link-switch" onclick="switchLoginMode('signin')">Sign In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ========================================================
+         PAGE 8: CONTACT, DEPOT NETWORK & 24/7 SUPPORT
+         ======================================================== -->
+    <section class="page-view" id="page-contact">
+      <div class="page-banner" style="background-image: linear-gradient(rgba(12, 74, 110, 0.9), rgba(15, 23, 42, 0.92)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1920&q=80');">
+        <div class="container text-center">
+          <span class="tag-badge">Get In Touch</span>
+          <h1 class="page-title">Contact Us &amp; 24/7 Depot Network</h1>
+          <p class="page-subtitle">Speak with our central dispatchers, report emergency shortages, or visit one of our regional water filling hubs.</p>
+        </div>
+      </div>
+
+      <div class="section-padding bg-surface">
+        <div class="container">
+          <div class="contact-layout-grid">
+            
+            <!-- Contact Channels & Information -->
+            <div class="contact-info-panel">
+              <span class="sub-title">24/7 Emergency Dispatch</span>
+              <h2>We're Standing By To Keep Your Water Flowing</h2>
+              <p>Whether you require a single emergency tanker within 45 minutes or wish to establish a multi-tanker supply contract, our dispatch control room is reachable around the clock.</p>
+
+              <div class="contact-methods">
+                <div class="c-method-card">
+                  <div class="c-icon">📞</div>
+                  <div>
+                    <h4>Toll-Free Emergency Hotline</h4>
+                    <a href="tel:+18004937694" class="c-link">+1 (800) 493-7694</a>
+                    <p class="c-sub">Average phone answer time: &lt; 15 seconds</p>
+                  </div>
+                </div>
+
+                <div class="c-method-card">
+                  <div class="c-icon">✉️</div>
+                  <div>
+                    <h4>Corporate &amp; Billing Inquiries</h4>
+                    <a href="mailto:dispatch@hydroswift-water.com" class="c-link">dispatch@hydroswift-water.com</a>
+                    <p class="c-sub">Guaranteed email response within 20 minutes</p>
+                  </div>
+                </div>
+
+                <div class="c-method-card">
+                  <div class="c-icon">🏢</div>
+                  <div>
+                    <h4>Central Command &amp; Water Depot #1</h4>
+                    <p class="c-val">500 Metro Industrial Parkway, Gate 4, Terminal East</p>
+                    <p class="c-sub">Open 24 Hours, 365 Days a Year</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live City Depot Stations -->
+              <div class="depots-box mt-4">
+                <h4>Regional Water Dispatch Stations</h4>
+                <div class="depot-chips-list">
+                  <span class="depot-chip active">📍 Hub 1: North Valley (12 Tankers)</span>
+                  <span class="depot-chip active">📍 Hub 2: East Metro Industrial (18 Tankers)</span>
+                  <span class="depot-chip active">📍 Hub 3: South Harbor &amp; Docks (8 Tankers)</span>
+                  <span class="depot-chip active">📍 Hub 4: West Residential Ridge (10 Tankers)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Inquiry Form -->
+            <div class="contact-form-panel">
+              <div class="contact-form-card">
+                <h3>Send Us an Inquiry / Request a Callback</h3>
+                <p>Fill out the form below and our regional dispatch supervisor will call you right away.</p>
+                
+                <form id="contactForm" onsubmit="handleContactSubmit(event)" novalidate>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="c-name">Your Full Name</label>
+                      <input type="text" id="c-name" class="form-control" placeholder="Johnathan Smith" data-validate="name" required>
+                      <div class="field-error-msg" id="c-name-error"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="c-phone">Phone Number (10 Digits)</label>
+                      <input type="tel" id="c-phone" class="form-control" placeholder="9876543210" maxlength="10" inputmode="numeric" data-validate="phone" required>
+                      <div class="field-error-msg" id="c-phone-error"></div>
+                    </div>
+                  </div>
+
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="c-email">Email Address (Lowercase only)</label>
+                      <input type="email" id="c-email" class="form-control" placeholder="john@example.com" data-validate="email" required>
+                      <div class="field-error-msg" id="c-email-error"></div>
+                    </div>
+                    <div class="form-group">
+                      <label for="c-need">Required Service</label>
+                      <select id="c-need" class="form-control">
+                        <option value="residential">Residential Water Tanker</option>
+                        <option value="commercial">Commercial / Hotel Bulk Water</option>
+                        <option value="construction">Construction Site Supply</option>
+                        <option value="pool">Swimming Pool Filling</option>
+                        <option value="sos">Emergency Urgent SOS</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="c-message">Message / Delivery Location Details</label>
+                    <textarea id="c-message" rows="4" class="form-control" placeholder="Please mention your approximate water volume required, delivery address, and date/time preference." required></textarea>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary btn-block btn-lg">
+                    Submit Inquiry &amp; Dispatch Request
+                  </button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Business Location Map -->
+          <div class="contact-map-section mt-5" id="contactMapSection">
+            <div class="contact-map-card">
+              <div class="contact-map-header">
+                <div class="map-header-left">
+                  <span class="sub-title">Central Depot &amp; Logistics Hub</span>
+                  <h3 class="map-card-title">Interactive Business Location Map</h3>
+                  <p class="map-card-address">
+                    <svg class="map-pin-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span><strong>Business Address:</strong> 500 Metro Industrial Parkway, Gate 4, Terminal East, Hub #1 Central Command</span>
+                  </p>
+                </div>
+                <div class="map-header-badge">
+                  <span class="badge-pulse"><span class="pulse-dot"></span> 24/7 Dispatch Gate</span>
+                </div>
+              </div>
+              <div class="contact-map-frame-wrap">
+                <iframe
+                  title="HydroSwift Central Command &amp; Dispatch Depot Location Map"
+                  class="contact-map-iframe"
+                  src="https://www.openstreetmap.org/export/embed.html?bbox=-74.0150%2C40.7100%2C-73.9950%2C40.7250&amp;layer=mapnik&amp;marker=40.7175%2C-74.0050"
+                  loading="lazy">
+                </iframe>
+              </div>
+              <div class="contact-map-footer">
+                <span>📍 Verified Logistics Depot Coordinates: 40.7175° N, 74.0050° W | Quick Access from Metro Express Ring Road</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Frequently Asked Questions (FAQ) -->
+          <div class="faq-section mt-5">
+            <div class="section-header text-center">
+              <span class="sub-title">Got Questions?</span>
+              <h2 class="section-title">Frequently Asked Questions</h2>
+              <p class="section-desc">Everything you need to know about our tanker water supply, purity, and delivery process.</p>
+            </div>
+
+            <div class="faq-accordion" id="faqAccordion">
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                  <span>How fast can a water tanker reach my home during an emergency?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Our average emergency dispatch time across all 38 regional depots is between 30 and 45 minutes. When you book via the "Emergency Rapid SOS" option, the closest available tanker in your postal sector is immediately rerouted to your address.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                  <span>Is the water safe for direct drinking and cooking?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Yes! Our "Potable RO+UV" drinking tankers carry certified food-grade water tested to WHO and BIS standards with TDS levels strictly under 85 PPM. All tankers carrying drinking water are manufactured from surgical 304 stainless steel and sanitized before refill.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                  <span>Can your tankers pump water into rooftop tanks on high-rise buildings?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Absolutely. Every HydroSwift vehicle is fitted with heavy-duty on-board centrifugal booster pumps capable of pushing water up to 140 feet vertically (approximately 10 to 14 storeys) through reinforced high-pressure hoses.</p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                  <span>How do I track my delivery and receive my invoice?</span>
+                  <svg class="faq-chevron" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+                </button>
+                <div class="faq-answer">
+                  <p>Once you confirm your booking, head to the "Customer Dashboard" tab. You will see a live GPS map showing the driver's current coordinates, speed, and real-time arrival countdown. Upon delivery completion, a certified digital invoice with GST breakdown is available to download or print.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+  </main>
+
+
+  <!-- ========================================================
+       MODAL 1: BOOK A TANKER POPUP / QUICK WIZARD
+       ======================================================== -->
+  <div class="modal-backdrop" id="bookingModal" onclick="closeModalOnBackdrop(event, 'bookingModal')">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">🚛</span>
+          <div>
+            <h3>Book a Water Tanker</h3>
+            <p>Direct priority dispatch with live driver tracking</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('bookingModal')" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <form id="modalBookingForm" onsubmit="handleModalBookingSubmit(event)">
+          <div class="form-group">
+            <label for="mb-water-type">Water Purity Grade</label>
+            <select id="mb-water-type" class="form-control" onchange="updateModalPrice()" required>
+              <option value="potable">RO+UV Drinking Water (Food Grade SS304)</option>
+              <option value="domestic">Domestic Water (Sumps &amp; Washing)</option>
+              <option value="pool">Swimming Pool Fresh Water</option>
+              <option value="construction">Construction Structural Water</option>
+              <option value="industrial">Industrial Demineralized Water (DM)</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mb-capacity">Tanker Size (Liters)</label>
+              <select id="mb-capacity" class="form-control" onchange="updateModalPrice()" required>
+                <option value="1000">1,000 Liters (Mini)</option>
+                <option value="3000" selected>3,000 Liters (Standard)</option>
+                <option value="5000">5,000 Liters (Large)</option>
+                <option value="10000">10,000 Liters (Commercial)</option>
+                <option value="20000">20,000 Liters (Mega Multi-Axle)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mb-urgency">Delivery Window</label>
+              <select id="mb-urgency" class="form-control" onchange="updateModalPrice()">
+                <option value="standard">Standard Slot (Next 2-3 Hours)</option>
+                <option value="urgent">🚨 Urgent SOS (Under 45 Mins)</option>
+                <option value="tomorrow">Scheduled for Tomorrow</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="mb-address">Delivery Address / Landmark</label>
+            <input type="text" id="mb-address" class="form-control" placeholder="House/Flat number, Street, Landmark" value="742 Evergreen Terrace, Sector 4" required>
+            <div class="field-error-msg" id="mb-address-error"></div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mb-customer-name">Contact Person Name</label>
+              <input type="text" id="mb-customer-name" class="form-control" placeholder="Full Name (Alphabets only)" value="Sarah Jenkins" data-validate="name" required>
+              <div class="field-error-msg" id="mb-customer-name-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="mb-phone">Driver Contact Mobile (10 Digits)</label>
+              <input type="tel" id="mb-phone" class="form-control" placeholder="9876543210" value="9876543210" maxlength="10" inputmode="numeric" data-validate="phone" required>
+              <div class="field-error-msg" id="mb-phone-error"></div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="mb-datetime">Scheduled Delivery Date &amp; Time</label>
+              <input type="datetime-local" id="mb-datetime" class="form-control" required>
+              <div class="field-error-msg" id="mb-datetime-error"></div>
+            </div>
+            <div class="form-group">
+              <label for="mb-email">Receipt Email (lowercase only)</label>
+              <input type="email" id="mb-email" class="form-control" placeholder="name@domain.com" value="sarah.jenkins@hydroswift.com" data-validate="email" required>
+              <div class="field-error-msg" id="mb-email-error"></div>
+            </div>
+          </div>
+
+          <div class="modal-pricing-box">
+            <div class="modal-fare-label">Total Amount Payable:</div>
+            <div class="modal-fare-value" id="mb-fare-display">$42.00</div>
+            <small class="modal-fare-hint">(Includes Tanker Transit, Hose Handling &amp; Taxes)</small>
+          </div>
+
+          <div class="modal-footer-actions">
+            <button type="button" class="btn btn-outline" onclick="closeModal('bookingModal')">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-pulse">Confirm &amp; Dispatch Tanker</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========================================================
+       MODAL 2: INVOICE / RECEIPT VIEWER WITH PRINT ACTION
+       ======================================================== -->
+  <div class="modal-backdrop" id="invoiceModal" onclick="closeModalOnBackdrop(event, 'invoiceModal')">
+    <div class="modal-dialog modal-dialog-lg">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-icon">📄</span>
+          <div>
+            <h3>Official Tax Invoice &amp; Delivery Receipt</h3>
+            <p>Verified HydroSwift Water Logistics Receipt</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" onclick="closeModal('invoiceModal')">&times;</button>
+      </div>
+
+      <div class="modal-body printable-area" id="invoicePrintArea">
+        <div class="invoice-paper">
+          <div class="inv-head">
+            <div class="inv-brand">
+              <h2>HydroSwift Water Logistics Inc.</h2>
+              <p>500 Metro Industrial Parkway, Hub #4<br>Licensed Water Carrier Reg: #WC-99214<br>Tax ID / GST: US-991204128</p>
+            </div>
+            <div class="inv-meta text-right">
+              <h3 class="inv-badge-paid">PAID IN FULL</h3>
+              <p><strong>Invoice #:</strong> <span id="inv-num">INV-2026-104</span><br>
+              <strong>Date:</strong> <span id="inv-date">Nov 04, 2026</span><br>
+              <strong>Order #:</strong> <span id="inv-order-ref">TK-99420</span></p>
+            </div>
+          </div>
+
+          <hr class="inv-divider">
+
+          <div class="inv-parties">
+            <div class="inv-to">
+              <strong>Billed To Customer:</strong>
+              <p id="inv-customer-name">Sarah Jenkins</p>
+              <p id="inv-customer-addr">742 Evergreen Terrace, Sector 4<br>Mobile: +1 (555) 019-2834</p>
+            </div>
+            <div class="inv-details text-right">
+              <strong>Delivery Dispatch:</strong>
+              <p>Driver: Marcus Vance (Tanker #4028)<br>Purity Audit: TDS 68 PPM (Passed)<br>Method: Booster Pump Dispense</p>
+            </div>
+          </div>
+
+          <table class="inv-table mt-4">
+            <thead>
+              <tr>
+                <th>Item &amp; Description</th>
+                <th>Volume</th>
+                <th>Rate / KL</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong id="inv-item-desc">3,000L Potable RO+UV Drinking Water</strong><br><small>304 Stainless Steel Tanker Delivery with High Pressure Booster</small></td>
+                <td id="inv-volume">3,000 L</td>
+                <td>$14.00 / KL</td>
+                <td id="inv-subtotal">$38.22</td>
+              </tr>
+              <tr>
+                <td>Pumping &amp; Sanitized Antimicrobial Hose Extension (100 ft)</td>
+                <td>1 Service</td>
+                <td>$0.00</td>
+                <td>$0.00</td>
+              </tr>
+              <tr>
+                <td>Transit &amp; Distance Freight Fuel</td>
+                <td>6 km</td>
+                <td>Included</td>
+                <td>$0.00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3" class="text-right"><strong>Net Taxable Value:</strong></td>
+                <td id="inv-net">$38.22</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="text-right"><strong>Sales Tax / VAT (9%):</strong></td>
+                <td id="inv-tax">$3.78</td>
+              </tr>
+              <tr class="inv-grand-total">
+                <td colspan="3" class="text-right"><strong>Total Paid (USD):</strong></td>
+                <td id="inv-total-paid">$42.00</td>
+              </tr>
+            </tfoot>
+          </table>
+
+          <div class="inv-footer-note mt-4">
+            <p>Thank you for choosing HydroSwift. Water purity is guaranteed per WHO drinking water standards. For questions regarding this invoice, contact billing@hydroswift-water.com.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-outline" onclick="closeModal('invoiceModal')">Close</button>
+        <button class="btn btn-primary" onclick="printInvoice()">🖨️ Print / Download PDF Receipt</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+
+  <!-- Global Footer -->
+  <footer class="main-footer">
+    <div class="container footer-content">
+      <div class="footer-col footer-brand-col">
+        <a href="#home1" class="brand-logo footer-logo" onclick="navigateTo('home1')" title="HydroSwift - Return to Home">
+          <div class="logo-icon">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="10" fill="url(#footer-logo-grad)"/>
+              <path d="M20 9C20 9 12 19.5 12 24.5C12 28.9183 15.5817 32.5 20 32.5C24.4183 32.5 28 28.9183 28 24.5C28 19.5 20 9 20 9Z" fill="#FFFFFF"/>
+              <path d="M16 23.5C16 21 18 17.5 19 16C18.5 19 19.5 21.5 21 23C22.5 24.5 23.5 26.5 22 28.5C20.5 30.5 17 29.5 16 27C15.5 25.75 16 24.5 16 23.5Z" fill="#38BDF8"/>
+              <defs>
+                <linearGradient id="footer-logo-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#0284C7"/>
+                  <stop offset="1" stop-color="#0369A1"/>
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-title text-white">Hydro<span class="text-accent">Swift</span></span>
+            <span class="logo-subtitle">Water Tanker Logistics</span>
+          </div>
+        </a>
+        <p class="footer-about">
+          HydroSwift is the premier automated water tanker supply and bulk logistics network. Delivering pure drinking water, swimming pool refills, construction utility water, and heavy industrial fluids 24/7 with live GPS telemetry.
+        </p>
+        <div class="footer-badges">
+          <span class="f-badge">ISO 9001 Certified</span>
+          <span class="f-badge">WHO Tested</span>
+          <span class="f-badge">24/7 Red Alert Ready</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home1" onclick="navigateTo('home1')">Home</a></li>
+          <li><a href="#services" onclick="navigateTo('services')">Services</a></li>
+          <li><a href="#rates" onclick="navigateTo('rates')">Rate Chart</a></li>
+          <li><a href="#dashboard" onclick="navigateTo('dashboard')">Dashboard</a></li>
+          <li><a href="#contact" onclick="navigateTo('contact')">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Water Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services" onclick="navigateTo('services')">RO+UV Potable Drinking Tankers</a></li>
+          <li><a href="#services" onclick="navigateTo('services')">Apartment Sump Refilling</a></li>
+          <li><a href="#services" onclick="navigateTo('services')">Swimming Pool Balancing Water</a></li>
+          <li><a href="#services" onclick="navigateTo('services')">Construction Site Water Bowsers</a></li>
+          <li><a href="#services" onclick="navigateTo('services')">Industrial Demineralized Water</a></li>
+          <li><a href="#services" onclick="navigateTo('services')">Emergency Fire Contingency</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-address-col">
+        <h4 class="footer-heading">Business Headquarters</h4>
+        <div class="footer-address-block">
+          <svg class="footer-loc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <div class="footer-address-text">
+            <strong>Central Command &amp; Depot #1</strong><br>
+            500 Metro Industrial Parkway, Gate 4, Terminal East<br>
+            Serving Metro City &amp; Regional Quadrants
+          </div>
+        </div>
+
+        <div class="footer-social-section mt-4">
+          <h4 class="footer-subheading">Follow Us</h4>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow HydroSwift on Instagram" title="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Follow HydroSwift on Facebook" title="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Subscribe to HydroSwift on YouTube" title="YouTube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Emergency Dispatch Desk</h4>
+        <p class="emergency-footer-phone">
+          <a href="tel:+18004937694">📞 +1 (800) 493-7694</a>
+        </p>
+        <p class="footer-address">
+          Serving All 4 City Quadrants &amp; Industrial Zones 24/7/365.
+        </p>
+        <div class="footer-cta-box">
+          <button class="btn btn-warning btn-block btn-sm" onclick="openBookingModal('potable', 3000)">
+            ⚡ Book Instant Tanker
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="footer-bottom-flex">
+        <p>&copy; 2026 HydroSwift Water Tanker Supply &amp; Logistics Inc. All Rights Reserved.</p>
+        <div class="footer-policy-links">
+          <a href="#terms" onclick="alert('HydroSwift Terms of Service: Water delivered according to WHO and local municipal drinking purity standards.')">Terms of Service</a>
+          <a href="#privacy" onclick="alert('HydroSwift Privacy Policy: GPS telematics and customer data protected under 256-bit encryption.')">Privacy Policy</a>
+          <a href="#purity" onclick="navigateTo('fleet')">Water Quality Guarantee</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
