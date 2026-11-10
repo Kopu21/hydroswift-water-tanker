@@ -78,9 +78,13 @@
         <!-- Mobile Drawer Utilities (Visible inside open mobile menu only) -->
         <div class="mobile-menu-actions">
           <div class="mobile-util-row">
-            <button type="button" class="action-btn icon-btn" id="mobileRtlBtn" onclick="toggleDirection()" title="Toggle Layout Direction (RTL / LTR)" aria-label="Toggle Layout Direction">
-              <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 12h16M4 12l4-4M4 12l4 4M20 6H10M20 18H10"/>
+            <button type="button" class="action-btn icon-btn" id="mobileRtlBtn" onclick="toggleDirection()" title="Switch to Right-to-Left Layout (RTL)" aria-label="Switch to RTL">
+              <svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 4H8a4 4 0 0 0 0 8h2"/>
+                <path d="M14 4v11"/>
+                <path d="M18 4v11"/>
+                <path d="M20 19H4"/>
+                <polyline points="8 16 5 19 8 22"/>
               </svg>
             </button>
             <button type="button" class="action-btn icon-btn" id="mobileThemeBtn" onclick="toggleTheme()" title="Toggle Dark / Light Mode" aria-label="Toggle Dark / Light Theme">
@@ -103,9 +107,13 @@
       <!-- Right Side Utilities (Exact Order: RTL Toggle, Theme Toggle, Customer Login, Book a Tanker) -->
       <div class="nav-actions">
         <!-- 1. RTL/LTR Toggle (Icon Only) -->
-        <button type="button" class="action-btn icon-btn" id="rtlToggleBtn" title="Toggle Layout Direction (RTL / LTR)" aria-label="Toggle Layout Direction">
-          <svg class="action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 12h16M4 12l4-4M4 12l4 4M20 6H10M20 18H10"/>
+        <button type="button" class="action-btn icon-btn" id="rtlToggleBtn" title="Switch to Right-to-Left Layout (RTL)" aria-label="Switch to RTL">
+          <svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 4H8a4 4 0 0 0 0 8h2"/>
+            <path d="M14 4v11"/>
+            <path d="M18 4v11"/>
+            <path d="M20 19H4"/>
+            <polyline points="8 16 5 19 8 22"/>
           </svg>
         </button>
 
@@ -264,7 +272,7 @@
           <div class="features-grid">
             <div class="feature-card">
               <div class="feature-img-wrap">
-                <img src="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=600&q=80" alt="Drinking water purity testing" class="feature-img" loading="lazy">
+                <img src="https://plus.unsplash.com/premium_photo-1661962539511-27704c1821cf?auto=format&fit=crop&w=600&q=80" alt="Industrial RO and UV drinking water purification plant" class="feature-img" loading="lazy">
                 <span class="feature-badge">Food-Grade Certified</span>
               </div>
               <div class="feature-body">
@@ -280,7 +288,7 @@
 
             <div class="feature-card">
               <div class="feature-img-wrap">
-                <img src="https://images.unsplash.com/photo-1584467735871-8e85353a8413?auto=format&fit=crop&w=600&q=80" alt="Apartment community water pumping" class="feature-img" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1555701307-06299b158245?auto=format&fit=crop&w=600&q=80" alt="Overhead rooftop water storage tank on multi-storey residential building" class="feature-img" loading="lazy">
                 <span class="feature-badge">High Pressure Pumps</span>
               </div>
               <div class="feature-body">
@@ -296,7 +304,7 @@
 
             <div class="feature-card">
               <div class="feature-img-wrap">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Modern residential neighborhood" class="feature-img" loading="lazy">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=600&q=80" alt="Gated residential community villa neighborhood water supply" class="feature-img" loading="lazy">
                 <span class="feature-badge">Automated Schedule</span>
               </div>
               <div class="feature-body">
@@ -636,7 +644,7 @@
          ======================================================== -->
     <section class="page-view" id="page-home2">
       <!-- Hero 2: Heavy Industrial & Construction Supply Focus -->
-      <section class="hero-section hero-home2" style="background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.90), rgba(30, 41, 59, 0.88)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&q=80');">
+      <section class="hero-section hero-home2">
         <div class="container hero-grid">
           <div class="hero-text-block">
             <div class="tag-badge badge-orange">
@@ -1778,7 +1786,7 @@
       <div class="dashboard-wrapper">
         <!-- Dashboard Sidebar Navigation -->
         <aside class="dash-sidebar">
-          <div class="dash-brand-block">
+          <a href="#home1" class="dash-brand-block" onclick="navigateTo('home1')" title="HydroSwift - Return to Home" aria-label="HydroSwift - Return to Home">
             <div class="logo-symbol">
               <svg viewBox="0 0 40 40" fill="none" width="32" height="32">
                 <rect width="40" height="40" rx="10" fill="#0284C7"/>
@@ -1790,7 +1798,7 @@
               <span class="logo-title">HydroSwift</span>
               <span class="logo-subtitle">Customer Portal</span>
             </div>
-          </div>
+          </a>
 
           <div class="dash-user-card">
             <div class="dash-avatar">
@@ -2332,8 +2340,8 @@
         <div class="auth-card">
           <!-- Top Layout inside the Login Card: Brand on Left, Theme & RTL on Right -->
           <div class="auth-card-top-bar">
-            <!-- Left Side: Brand Logo and Brand Name (Non-clickable) -->
-            <div class="login-brand-display">
+            <!-- Left Side: Brand Logo and Brand Name (Clickable Navigation to Homepage1) -->
+            <a href="#home1" class="login-brand-display" onclick="navigateTo('home1')" title="HydroSwift - Return to Home" aria-label="HydroSwift - Return to Home">
               <div class="logo-symbol">
                 <svg viewBox="0 0 40 40" fill="none" width="38" height="38" xmlns="http://www.w3.org/2000/svg">
                   <rect width="40" height="40" rx="10" fill="url(#login-card-logo-grad)"/>
@@ -2351,15 +2359,21 @@
                 <span class="logo-title">Hydro<span class="text-accent">Swift</span></span>
                 <span class="logo-subtitle">Water Tanker Logistics</span>
               </div>
-            </div>
+            </a>
 
             <!-- Right Side: Theme Toggle & RTL/LTR Toggle -->
             <div class="login-top-actions">
               <button type="button" class="action-btn icon-only-btn circle-btn" onclick="toggleTheme()" id="loginThemeBtn" title="Toggle Dark / Light Theme" aria-label="Toggle Dark or Light Theme">
                 <span class="theme-icon" id="loginThemeIcon">🌙</span>
               </button>
-              <button type="button" class="action-btn icon-only-btn circle-btn" onclick="toggleDirection()" id="loginRtlBtn" title="Toggle Layout Direction (RTL / LTR)" aria-label="Toggle RTL or LTR Direction">
-                <span class="dir-icon">⇄</span>
+              <button type="button" class="action-btn icon-only-btn circle-btn" onclick="toggleDirection()" id="loginRtlBtn" title="Switch to Right-to-Left Layout (RTL)" aria-label="Switch to RTL">
+                <svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 4H8a4 4 0 0 0 0 8h2"/>
+                  <path d="M14 4v11"/>
+                  <path d="M18 4v11"/>
+                  <path d="M20 19H4"/>
+                  <polyline points="8 16 5 19 8 22"/>
+                </svg>
               </button>
             </div>
           </div>

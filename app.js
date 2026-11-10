@@ -209,6 +209,38 @@ function applyDirection(dir) {
   document.documentElement.setAttribute('dir', dir);
   localStorage.setItem('hs_dir', dir);
 
+  const isRtl = dir === 'rtl';
+  const targetTitle = isRtl ? 'Switch to Left-to-Right Layout (LTR)' : 'Switch to Right-to-Left Layout (RTL)';
+  const targetAria = isRtl ? 'Switch to LTR' : 'Switch to RTL';
+
+  // Standard universally recognizable direction icons (Pilcrow text direction format):
+  // When in LTR, display the standard RTL icon with arrow pointing Right-to-Left (<-)
+  // When in RTL, display the standard LTR icon with arrow pointing Left-to-Right (->)
+  const rtlIconSvg = `<svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4H8a4 4 0 0 0 0 8h2"/><path d="M14 4v11"/><path d="M18 4v11"/><path d="M20 19H4"/><polyline points="8 16 5 19 8 22"/></svg>`;
+  const ltrIconSvg = `<svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4H8a4 4 0 0 0 0 8h2"/><path d="M14 4v11"/><path d="M18 4v11"/><path d="M4 19h16"/><polyline points="16 16 19 19 16 22"/></svg>`;
+  const activeSvg = isRtl ? ltrIconSvg : rtlIconSvg;
+
+  const rtlBtn = document.getElementById('rtlToggleBtn');
+  if (rtlBtn) {
+    rtlBtn.innerHTML = activeSvg;
+    rtlBtn.title = targetTitle;
+    rtlBtn.setAttribute('aria-label', targetAria);
+  }
+
+  const mobileRtlBtn = document.getElementById('mobileRtlBtn');
+  if (mobileRtlBtn) {
+    mobileRtlBtn.innerHTML = activeSvg;
+    mobileRtlBtn.title = targetTitle;
+    mobileRtlBtn.setAttribute('aria-label', targetAria);
+  }
+
+  const loginRtlBtn = document.getElementById('loginRtlBtn');
+  if (loginRtlBtn) {
+    loginRtlBtn.innerHTML = activeSvg;
+    loginRtlBtn.title = targetTitle;
+    loginRtlBtn.setAttribute('aria-label', targetAria);
+  }
+
   const statusLabel = document.getElementById('rtlStatusText');
   if (statusLabel) {
     statusLabel.textContent = dir.toUpperCase();
