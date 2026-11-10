@@ -213,11 +213,9 @@ function applyDirection(dir) {
   const targetTitle = isRtl ? 'Switch to Left-to-Right Layout (LTR)' : 'Switch to Right-to-Left Layout (RTL)';
   const targetAria = isRtl ? 'Switch to LTR' : 'Switch to RTL';
 
-  // Standard universally recognizable direction icons (Pilcrow text direction format):
-  // When in LTR, display the standard RTL icon with arrow pointing Right-to-Left (<-)
-  // When in RTL, display the standard LTR icon with arrow pointing Left-to-Right (->)
-  const rtlIconSvg = `<svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4H8a4 4 0 0 0 0 8h2"/><path d="M14 4v11"/><path d="M18 4v11"/><path d="M20 19H4"/><polyline points="8 16 5 19 8 22"/></svg>`;
-  const ltrIconSvg = `<svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4H8a4 4 0 0 0 0 8h2"/><path d="M14 4v11"/><path d="M18 4v11"/><path d="M4 19h16"/><polyline points="16 16 19 19 16 22"/></svg>`;
+  // Dual horizontal arrows matching reference design (top arrow left, bottom arrow right):
+  const rtlIconSvg = `<svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 4.5L5 8l3.5 3.5"/><path d="M5 8h14"/><path d="M15.5 12.5L19 16l-3.5 3.5"/><path d="M19 16H5"/></svg>`;
+  const ltrIconSvg = `<svg class="action-icon dir-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 4.5L19 8l-3.5 3.5"/><path d="M19 8H5"/><path d="M8.5 12.5L5 16l3.5 3.5"/><path d="M5 16h14"/></svg>`;
   const activeSvg = isRtl ? ltrIconSvg : rtlIconSvg;
 
   const rtlBtn = document.getElementById('rtlToggleBtn');
